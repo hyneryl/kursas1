@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRIS'o formos elementai</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Jūsų informacija:</legend>
+            <table style="border-collapse: collapse; margin: 0px; padding: -20px">
+                <tr>
+                    <td>Vardas:</td>
+                    <td><input type="text" name="firstname" value=""></td>
+                </tr>    
+                <tr>
+                    <td>Pavardė:</td>
+                    <td><input type="text" name="lastname" value=""></td>
+                </tr>    
+            </table>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Klausimai:</legend>Kaip sužinojote apie mus?
+       <form>
+           <select size="1">
+                <option value="Google" selected>Google</option>
+                <option value="Qwant">Qwant</option>
+                <option value="Bing">Bing</option>
+                <option value="word of mouth">word of mouth</option>
+                </select>
+        </form>
+        <br><br>
+         <form>
+             <legend>Ar apsilankysite vėl?</legend>
+              <label>Taip</label><input type="radio" name="ansPlius" value="Taip">
+             <label>Ne</label><input type="radio" name="ansMinus" value="Ne">
+             <label>Galibūt</label><input type="radio" name="ansMaybe" value="Galibūt">
+             
+        </form> 
+        <br>
+        <form>
+            <legend>Ką manote apie kursa?</legend>
+            <textarea style="margin-bottom: 16px" placeholder="Rašykite viską ką galvojate" rows="12px" cols="85px"></textarea>
+        </form>
+         <form>
+             <legend style="margin-bottom: -38px">Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</legend>
+                <table>
+                    <tr>  
+                        <td><input type="checkbox" name="vehicle1" value="C#">C#</td>
+                        <td><input type="checkbox" name="vehicle2" value="JAVA">JAVA</td>
+                        <td><input type="checkbox" name="vehicle2" value="PHP">PHP</td>
+                    </tr>
+                    <br>
+                    <tr>  
+                        <td><input type="checkbox" name="vehicle2" value="HTML">HTML</td>
+                        <td><input type="checkbox" name="vehicle2" value="CSS">CSS</td>
+                        <td><input type="checkbox" name="vehicle2" value="JavaScript">JavaScript</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><input type="checkbox" name="vehicle2" value="Python">Python</td>
+                        <td><input type="checkbox" name="vehicle2" value="Ruby">Ruby</td>
+                    </tr>
+                </table>
+        </form>     
+            <div><br><br>
+            <input type="submit" value="Siūsti">
+            <br>
+            </div>
+        </fieldset>
+    </form>
+</body>
+    
+</html>
