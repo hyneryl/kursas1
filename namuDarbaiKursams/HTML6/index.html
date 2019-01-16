@@ -1,41 +1,52 @@
 <!doctype html>
 <html lang="lt">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link type="text/css" rel="stylesheet" href="css/style.css" />
-        <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300" />
-        <title>Calculatrice-Skaičiuotuvas</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculatrice-Skaičiuotuvas</title>
     </head>
    
 <body>
-<div id="container">
-<h1>Skaičiuotuvas</h1>
-<div id="calculator">
-    <div id="header">
-        <input type="text" id="number" value="0" autocomplete="off" disabled />
-    </div>
-    <div id="body">
-        <div class="buttons">7</div>
-        <div class="buttons">8</div>
-        <div class="buttons">9</div>
-        <div class="buttons">/</div>
-        <div class="buttons">4</div>
-        <div class="buttons">5</div>
-        <div class="buttons">6</div>
-        <div class="buttons">*</div>
-        <div class="buttons">1</div>
-        <div class="buttons">2</div>
-        <div class="buttons">3</div>
-        <div class="buttons">-</div>
-        <div class="buttons">0</div>
-        <div class="buttons">.</div>
-        <div class="buttons">=</div>
-        <div class="buttons">+</div>
-    </div>
-    <div>
-        <input type="button" value="Skaičiuoti" />
-    </div>
-</div>
+<div id="calculator" class="back">
+  <div><h1>CHRIS's CALCULATOR</h1></div>
+  <div>
+    <input class="input" type="text"  id="input" value="0" readonly="readonly">
+  </div>
+  <div  id="keys" class="keys">
+    <table>
+        <tr>
+            <td><button onClick="Clear()">AC</button></td>
+            <td><button style="width: 100%" onClick="DEL()">DEL</button></td>
+            <td><button onClick="calculator1()">%</button></td>
+            <td><button onClick="calculator1()">/</button></td>
+        </tr>
+        <tr>
+            <td><button onClick="calculator()">7</button></td>
+            <td><button width="50px" onClick="calculator()">8</button></td>
+            <td><button width="50px" onClick="calculator()">9</button></td>
+            <td><button width="50px" onClick="calculator1()">+</button></td>
+        </tr>
+        <tr>
+            <td><button onClick="calculator()">4</button></td>
+            <td><button onClick="calculator()">5</button></td>
+            <td><button onClick="calculator()">6</button></td>
+            <td><button onClick="calculator1()">-</button></td>
+        </tr>
+        <tr>
+            <td><button onClick="calculator()">1</button></td>
+            <td><button onClick="calculator()">2</button></td>
+            <td><button onClick="calculator()">3</button></td>
+            <td><button onClick="calculator1()">*</button></td>
+        </tr>
+        <tr>
+            <td><button onClick="zero()">0</button></td>
+            <td><button onClick="dot()">.</button></td>
+            <td><button onClick="dzero()">00</button></td>
+            <td><button onClick="resultcalculator()">=</button></td>
+        </tr>
+    </table>
+  </div>
+    <input type="button" value="Skaičiuoti" />
 </div>
 </body>
 </html>
