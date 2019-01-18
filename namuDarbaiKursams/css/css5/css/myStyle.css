@@ -7,7 +7,7 @@ body{
 }
 .header h1{
 	color: goldenrod;
-	text-align: center
+	text-align: center;
 }
 keys{
 	margin-top: 25px;
@@ -25,8 +25,8 @@ keys{
 }
 table{
 	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 button{
 	font-weight: bold;
@@ -37,6 +37,7 @@ button{
 	border-radius:50px;
 	width:65px;
 	height:65px;
+	padding-left: 10px;
 }
 .calc{
 	text-align: center;
@@ -48,5 +49,4 @@ button{
 	margin-top: 25px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: darkgrey;
 }
