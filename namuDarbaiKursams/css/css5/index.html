@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="lt">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculatrice-Skaičiuotuvas</title>
+			<link href="css/myStyle.css" type="text/css" rel="stylesheet" />
+    </head>
+   
+<body>
+<div id="calculator" class="back">
+  <div class="header">
+		<h1>CHRIS's CALCULATOR</h1>
+	</div>
+  <div>
+    <input class="resultcal" type="text"  id="input" value="0" readonly="readonly">
+  </div>
+  <div  id="keys" class="keys">
+    <table>
+        <tr>
+            <td><button onclick="Clear()">AC</button></td>
+            <td><button style="width: 100%" onClick="DEL()">DEL</button></td>
+            <td><button onClick="calculator1()">%</button></td>
+            <td><button onClick="calculator1()">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="calculator()">7</button></td>
+            <td><button width="50px" onClick="calculator()">8</button></td>
+            <td><button width="50px" onClick="calculator()">9</button></td>
+            <td><button width="50px" onClick="calculator1()">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="calculator()">4</button></td>
+            <td><button onclick="calculator()">5</button></td>
+            <td><button onclick="calculator()">6</button></td>
+            <td><button onClick="calculator1()">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="calculator()">1</button></td>
+            <td><button onclick="calculator()">2</button></td>
+            <td><button onclick="calculator()">3</button></td>
+            <td><button onclick="calculator1()">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="zero()">0</button></td>
+            <td><button onclick="dot()">.</button></td>
+            <td><button onclick="dzero()">00</button></td>
+            <td><button onclick="resultcalculator()">=</button></td>
+        </tr>
+    </table>
+  </div>
+    <input class="calc" type="button" value="Skaičiuoti" />
+</div>
+</body>
+</html>
