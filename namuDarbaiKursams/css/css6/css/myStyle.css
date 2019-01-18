@@ -1,0 +1,77 @@
+#forma{
+	width: 250px;
+}
+
+#forma fieldset{
+	background-color: beige;
+	overflow:hidden;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#forma table{
+	border-collapse: collapse;
+	margin: 0px; 
+	padding: -20px
+}
+
+.forminput{
+	background-color:lightcyan;
+}
+
+div{
+	margin-top: 20px;
+}
+#formb{
+	width: 750px;
+}
+#formb fieldset{
+	background-color: bisque;
+	overflow:hidden;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+.formselect{
+	background-color: lightcyan;
+}
+#formc{
+	padding-left: 10px;
+	padding-bottom: 14px;
+}
+#formd{
+	margin-top: 14px;
+	margin-bottom: 14px;
+	border-spacing: 12px;
+	display: flex;
+}
+#formd label{
+	margin-left: 14px;
+}
+#formd label input{
+	margin-left: 100px
+	
+}
+#formd label{
+	text-align: 100px;
+}
+
+#formf{
+	margin-bottom: 34px
+}
+
+#formf table{
+	margin-top: -45px;
+	margin-left: 20px;
+	border-spacing: 12px;
+}
+
+.formsarea{
+	background-color: lightcyan;
+	margin-bottom: 16px;
+	overflow:hidden;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}

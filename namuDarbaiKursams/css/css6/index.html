@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CHRIS'o formos elementai</title>
+	<link href="css/myStyle.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<form id="forma">
+		<fieldset>
+			<legend>Jūsų informacija:</legend>
+			<table>
+				<tr>
+					<td>Vardas:</td>
+					<td><input class="forminput" type="text" name="firstname" value=""></td>
+				</tr>    
+				<tr>
+					<td>Pavardė:</td>
+					<td><input class="forminput" type="text" name="lastname" value=""></td>
+				</tr>    
+			</table>
+		</fieldset>
+	</form>
+  <div>  
+		<form id="formb">
+			<fieldset>
+			<legend>Klausimai:</legend>
+
+			<label>Kaip sužinojote apie mus?</label>
+			<form id="formc">
+				<select class="formselect" size="1">
+					<option value="Google" selected>Google</option>
+					<option value="Qwant">Qwant</option>
+					<option value="Bing">Bing</option>
+					<option value="word of mouth">word of mouth</option>
+				</select>
+		</form>
+ 
+		<form id="formd">
+			 <legend>Ar apsilankysite vėl?</legend>
+				<label>Taip</label><input type="radio" name="ansPlius" value="Taip">
+			 <label>Ne</label><input type="radio" name="ansPlius" value="Ne">
+			 <label>Galibūt</label><input type="radio" name="ansPlius" value="Galibūt">
+		</form> 
+	
+	<form id="forme">
+			<legend>Ką manote apie kursa?</legend>
+			<textarea class="formsarea" placeholder="Rašykite viską ką galvojate" rows="12px" cols="85px"></textarea>
+	</form>
+					
+	 <form id="formf">
+	 		<legend>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</legend>
+			<table>
+					<tr>  
+							<td><input type="checkbox" name="vehicle1" value="C#">C#</td>
+							<td><input type="checkbox" name="vehicle2" value="JAVA">JAVA</td>
+							<td><input type="checkbox" name="vehicle2" value="PHP">PHP</td>
+					</tr>
+					<br>
+					<tr>  
+							<td><input type="checkbox" name="vehicle2" value="HTML">HTML</td>
+							<td><input type="checkbox" name="vehicle2" value="CSS">CSS</td>
+							<td><input type="checkbox" name="vehicle2" value="JavaScript">JavaScript</td>
+					</tr>
+					<br>
+					<tr>
+							<td><input type="checkbox" name="vehicle2" value="Python">Python</td>
+							<td><input type="checkbox" name="vehicle2" value="Ruby">Ruby</td>
+					</tr>
+			</table>
+	</form>   
+
+	<div>
+		<input type="submit" value="Siūsti">
+	</div>
+			
+		</fieldset>
+	</form>
+ </div> 
+</body>
+    
+</html>
