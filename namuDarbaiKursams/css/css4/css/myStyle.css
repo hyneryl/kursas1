@@ -1,0 +1,72 @@
+body{
+  font-size: 80%;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.15em;
+  background-color: #efefef;
+}
+
+
+#container{
+  max-width: 940px;
+  min-width: 720px;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+  border: 4px double #000;
+  background-color: #ffffff;
+}
+
+h2{
+  width: 150px;
+  margin: 10px auto 25px auto;
+}
+
+#meniu {
+	list-style-type: none;
+	text-decoration: none;
+	display: flex;
+}
+
+ul{
+  width: 570px;
+  padding: 15px;
+  margin: 0px auto 0px auto;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+li{
+  display:inline-flex;
+  margin: 0px 3px;
+	
+	text-transform: uppercase;
+	
+}
+.products{
+	display:block;
+	width:auto;
+	margin-top: 20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+a{
+  color: #000000;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+  padding: 6px 6px 6px 6px;
+}
+
+a:hover,
+a.on {
+  color: #cc3333;
+  background-color: #efefef;
+}
+
+p{
+  text-align: center;
+  width: 600px;
+  margin: 20px auto 20px auto;
+  font-weight: normal;
+}
