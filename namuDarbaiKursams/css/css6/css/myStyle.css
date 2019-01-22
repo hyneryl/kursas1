@@ -1,9 +1,32 @@
+/* resetting select arrow shapes*/
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
 #forma{
 	width: 250px;
 }
 
 #forma fieldset{
-	background-color: beige;
+	background-color: #ffd280;
 	overflow:hidden;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -18,6 +41,10 @@
 
 .forminput{
 	background-color:lightcyan;
+	border: 2px solid black;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 2px 2px 2px	2px white inset;
+	border-collapse: collapse;
 }
 
 div{
@@ -27,7 +54,7 @@ div{
 	width: 750px;
 }
 #formb fieldset{
-	background-color: bisque;
+	background-color: #ff8080;
 	overflow:hidden;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -36,9 +63,49 @@ div{
 .formselect{
 	background-color: lightcyan;
 }
+
+/* arrow from select option input*/
+select.round {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.round:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+
 #formc{
 	padding-left: 10px;
 	padding-bottom: 14px;
+}
+#formc.formselect option{
+	border-radius: 2px 2px 2px 2px outset;
 }
 #formd{
 	margin-top: 14px;
@@ -74,4 +141,10 @@ div{
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
+}
+.fininput input{
+	margin-left: 48%;
+	margin-right: 48%;
+	align-items: center;
+	text-align: center;
 }

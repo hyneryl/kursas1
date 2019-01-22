@@ -1,0 +1,36 @@
+@media screen and (max-width:600px){
+.cols1{width: 8.33%}
+.cols2{width: 16.66%}
+.cols3{width: 25%}
+.cols4{width: 33.33%}
+.cols5{width: 41.66%}
+.cols6{width: 50%}
+.cols7{width: 58.33%}
+.cols8{width: 66.66%}
+.cols9{width: 75%}
+.cols10{width: 83.33%}
+.cols11{width: 91.66%}
+.cols12{width: 100%}
+}
+
+@media screen and (min-width:601px){
+.colb1{width: 8.33%}
+.colb2{width: 16.66%}
+.colb3{width: 25%}
+.colb4{width: 33.33%}
+.colb5{width: 41.66%}
+.colb6{width: 50%}
+.colb7{width: 58.33%}
+.colb8{width: 66.66%}
+.colb9{width: 75%}
+.colb10{width: 83.33%}
+.colb11{width: 91.66%}
+.colb12{width: 100%}
+}
+
+
+.row, nav.row ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+

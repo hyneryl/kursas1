@@ -1,0 +1,90 @@
+@media screen and (max-width:600px){
+.cols1{width: 8.33%}
+.cols2{width: 16.66%}
+.cols3{width: 25%}
+.cols4{width: 33.33%}
+.cols5{width: 41.66%}
+.cols6{width: 50%}
+.cols7{width: 58.33%}
+.cols8{width: 66.66%}
+.cols9{width: 75%}
+.cols10{width: 83.33%}
+.cols11{width: 91.66%}
+.cols12{width: 100%}
+}
+
+@media screen and (min-width:601px){
+.colb1{width: 8.33%}
+.colb2{width: 16.66%}
+.colb3{width: 25%}
+.colb4{width: 33.33%}
+.colb5{width: 41.66%}
+.colb6{width: 50%}
+.colb7{width: 58.33%}
+.colb8{width: 66.66%}
+.colb9{width: 75%}
+.colb10{width: 83.33%}
+.colb11{width: 91.66%}
+.colb12{width: 100%}
+}
+
+body{
+	font-family: 'Indie Flower', cursive;
+}
+
+.container{
+
+}
+
+.container h3{
+	text-transform: uppercase;
+}
+
+.box{
+	float: left;
+	flex-wrap: column wrap;
+	height: 125px;
+	width: 125px;
+	margin: 2px 2px 2px 2px;
+	background-color: white;
+	clear: right;
+	border: 1px;
+	box-shadow: 2px 2px 2px black;
+}
+
+.calendar{
+	width: 960px;
+	height: 740px;
+/*	float: right;*/
+}
+.box div{
+	padding-left: 10px;
+	background-color: #ff3333;
+	color: #fff;
+	width: 25px;
+	border-radius: 50%;
+}
+.box:nth-child(7n+6)/* tous les 7 on commence tous les 6jours  pour les samedis*/ {
+	background-color: #ffa500;
+}
+.box:nth-child(7n+7)/* tous les 7jours on commence tous les 7jours pour les dimanches */ {
+	background-color: #ffa500;
+}
+
+.box:hover{
+	background: lightblue;
+}
+/*
+.empty{
+	clear:left;
+}
+*/
+span{
+	margin-left: 10px;
+}
+.sport{
+	background-color: limegreen;
+}
+.music{
+	background-color: mediumpurple;
+}
