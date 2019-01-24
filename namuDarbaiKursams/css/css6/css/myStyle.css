@@ -1,6 +1,9 @@
+body{
+	background-color: #444;
+}
+
 /* resetting select arrow shapes*/
 select {
-
   /* styling */
   background-color: white;
   border: thin solid blue;
@@ -32,7 +35,9 @@ select {
     -webkit-border-radius: 8px;
     border-radius: 8px;
 }
-
+legend{
+	color: white;
+}
 #forma table{
 	border-collapse: collapse;
 	margin: 0px; 
