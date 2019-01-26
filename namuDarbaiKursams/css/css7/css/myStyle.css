@@ -74,11 +74,9 @@ body{
 .box:hover{
 	background: lightblue;
 }
-/*
 .empty{
 	clear:left;
 }
-*/
 span{
 	margin-left: 10px;
 }

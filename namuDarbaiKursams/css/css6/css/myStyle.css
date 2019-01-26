@@ -29,7 +29,7 @@ select {
 }
 
 #forma fieldset{
-	background-color: #ffd280;
+	background-color: #4d4dff;
 	overflow:hidden;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -59,7 +59,7 @@ div{
 	width: 750px;
 }
 #formb fieldset{
-	background-color: #ff8080;
+	background-color: #4d4dff;
 	overflow:hidden;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;

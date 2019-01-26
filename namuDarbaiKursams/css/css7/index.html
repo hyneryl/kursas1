@@ -1,147 +1,216 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>css - css7 calendar</title>
-		<link href="css/myStyle.css" rel=stylesheet type="text/css"/>
-		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&amp;subset=latin-ext" rel="stylesheet">
+    <title>CALENDAR</title>
+    <style>
+        body {
+            background-color: #ffffcc;
+            font-family: 'Font Name', serif;
+/*					a changer */
+        }
+        .month {
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+        
+        .box {
+            float: left;
+            height: 100px;
+            width: 100px;
+            background-color: #ffcc66;
+            margin: 5px;
+            color: aliceblue;
+            transition: 1s;
+            box-shadow: 2px 2px 3px #333;
+						border-radius: 8px;
+        }
+        
+        .box:hover {
+            background-color: #b3b3ff;
+            transition: 1s;
+        }
+       
+        .workdays {
+            height: 20px;
+            font-size: 10px;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        
+        .date {
+/*            padding: 3px;*/
+						background-color: red;
+						margin: 8px;
+						padding: -8px;
+						border-radius: 8px;
+        }
+        
+        .box:nth-child(7n-1) {
+            background-color: #ffcccc;       
+        }
+        
+        .box:nth-child(7n) {
+            background-color: burlywood;       
+        }
+        
+        .box:nth-child(7n-1):hover {
+            background-color: #919396;       
+        }
+        
+        .box:nth-child(7n):hover {
+            background-color: #919396;       
+        }
+        
+         .calendar {
+            width: 780px;
+        }
+        
+        .vsc {
+            margin-top: 10px;
+            background-color: #66ffcc;
+						border-radius: 8px;
+        }
+				.music {
+						margin-top: 10px;
+            background-color: #1a8cff;
+						border-radius: 8px;
+				}
+				.celebration {
+						margin-top: 10px;
+            background-color: #ff8533;
+						border-radius: 8px;
+				}
+        .weekends {
+            background-color: cadetblue;
+        }
+         
+    </style>    
 </head>
 
 <body>
-	<div class="container">
-		<div>
-			<h3>Rugpjutis</h3>
-		</div>
-			<!-- <div class="calendar">-->
-		<div class="row calendar cols12 colb12">
-			<div class="box empty cols12 colb1">
-			</div> 
-
-			<div class="box weekday cols1 colb12">
-				<div>1</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>2</div>
-				
-			</div>
-			<div class="box weekday cols12 colb1">
-				<div>3</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>4</div>
-			</div>
-
-			<div class="box weekend cols12 colb1">
-				<div>5</div>
-			</div>
-
-			<div class="box weekend cols12 colb1">
-				<div>6</div>
-				<span class="sport">Vilnius running</span>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>7</div>
-			</div>     	
-
-			<div class="box weekday cols12 colb1">
-				<div>8</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>9</div>
-			</div>
-			<div class="box weekday cols12 colb1">
-				<div>10</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>11</div>
-			</div>
-
-			<div class="box weekend cols12 colb1">
-				<div>12</div>
-			</div>
-
-			<div class="box weekend cols12 colb1">
-				<div>13</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>14</div>
-				<span class="music">Concert</span>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>15</div>
-			</div>     	
-
-			<div class="box weekday cols12 colb1">
-				<div>16</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>17</div>
-			</div>
-			<div class="box weekday cols12 colb1">
-				<div>18</div>
-			</div>
-
-			<div class="box weekend cols12 colb1">
-				<div>19</div>
-				<span class="music">Summer festival</span>
-			</div>
-
-			<div class="box weekend cols12 colb1">
-				<div>20</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>21</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>23</div>
-			</div>
-
-				<div class="box weekday cols12 colb1">
-				<div>24</div>
-			</div>     	
-
-				<div class="box weekday cols12 colb1">
-				<div>25</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>25</div>
-			</div>
-			<div class="box weekend cols12 colb1">
-				<div>26</div>
-			</div>
-
-			<div class="box weekend cols12 colb1">
-				<div>27</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>28</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>29</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>30</div>
-			</div>
-
-			<div class="box weekday cols12 colb1">
-				<div>31</div>
-			</div>
-			</div>
-		</div>	
+   <div class="container">
+       <h1 class="month">Rugpjūtis</h1>
+    <div class="calendar">
+        <div class="box workdays">pirmadienis</div>
+        <div class="box workdays">antradienis</div>
+        <div class="box workdays">treciadienis</div>
+        <div class="box workdays">ketvertadienis</div>
+        <div class="box workdays">penktadienis</div>
+        <div class="box workdays">Šeštadienis</div>
+        <div class="box workdays">Sekmadienis</div>
+        <div class="box">
+            <span class="date">1</span>
+						<p class="vsc">Learn to Code</p>
+        </div>
+        <div class="box">
+            <span class="date">2</span>
+            <p class="vsc">Learn to Code</p>
+        </div>
+        <div class="box">
+            <span class="date">3</span>
+            <p class="vsc">Learn to Code</p>
+        </div>
+        <div class="box">
+            <span class="date">4</span>
+            <p class="vsc">Learn to Code</p>
+        </div>
+        <div class="box">
+            <span class="date">5</span>
+        </div>
+        <div class="box">
+            <span class="date">6</span>
+             <p class="sport">Vilnius running</p>
+        </div>
+        <div class="box">
+            <span class="date">7</span>
+            
+        </div>
+        <div class="box">
+            <span class="date">8</span>
+        </div>
+        <div class="box">
+            <span class="date">9</span>
+            <p class="vsc">Learn to Code</p>
+        </div>
+        <div class="box">
+            <span class="date">10</span>
+             <p class="vsc">Learn to Code</p>
+        </div>
+        <div class="box">
+            <span class="date">11</span>
+            <p class="vsc">Learn to Code</p>
+        </div>
+        <div class="box">
+            <span class="date">12</span>
+             <p class="vsc">Learn to Code</p>
+        </div>
+        <div class="box">
+            <span class="date">13</span>
+        </div>
+        <div class="box">
+            <span class="date">14</span>
+            <p class="music">Concert</p>
+        </div>
+        <div class="box">
+            <span class="date">15</span>
+        </div>
+        <div class="box">
+            <span class="date">16</span>
+        </div>
+        <div class="box">
+            <span class="date">17</span>
+        </div>
+        <div class="box">
+            <span class="date">18</span>
+             <p class="music">Summer festival</p>
+        </div>
+        <div class="box">
+            <span class="date">19</span>
+        </div>
+        <div class="box">
+            <span class="date">20</span>
+        </div>
+        <div class="box">
+            <span class="date">21</span>
+            <p class="celebration">Vardadienis</p>
+        </div>
+        <div class="box">
+            <span class="date">22</span>
+            <p class="vsc">Learn to Code</p>
+        </div>
+        <div class="box">
+            <span class="date">23</span>
+        </div>
+        <div class="box">
+            <span class="date">24</span>
+        </div>
+        <div class="box">
+            <span class="date">25</span>
+        </div>
+        <div class="box">
+            <span class="date">26</span>
+        </div>
+        <div class="box">
+            <span class="date">27</span>
+        </div>
+        <div class="box">
+            <span class="date">28</span>
+        </div>
+        <div class="box">
+            <span class="date">29</span>
+        </div>
+        <div class="box">
+            <span class="date">30</span>
+        </div>
+        <div class="box">
+            <span class="date">31</span>
+        </div>
+    </div>
+   </div>     
+    
 </body>
 </html>
