@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title></title>
+		<title>js - js6 age exercice</title>
 </head>
 
 <body>
 	
-	<p> Parašykite funkciją, kuri patikrina jūsų įvestą amžių. Jeigu jūsų amžius yra 18 ir daugiau, tada rodomas pranešimas, kad jūs galite užeiti į svetainę, priešingu atveju, rodomas pranešimas, kad į svetainę užeiti negalite.</p>
+	<p> Parašykite funkciją, kuri patikrina jūsų įvestą amžių. Jeigu jūsų amžius yra 18 ir daugiau, tada rodomas pranešimas, kad jūs galite užeiti į svetainę, priešingu atveju, rodomas pranešimas, kad į svetainę užeiti negalite.
+	
+	</p>
 	<br>
 	
-	<input id="ageInsert" type="text" name="ageInsert" placeholder="insert your age here" value="">	
-  <input id="submit" type="submit" value="Submit">
+	<input id="age" type="number" placeholder="įveskite savo amžių--Enter your age:" value="permitComeOnIn()">	
+	<button id="submit" type="submit">Submit</button>
 
 	<script>
 		
 		document.getElementById("submit").addEventListener("click",permitComeOnIn());
-		
-		function (permitComeOnIn) {
-			var i = 0;
-			var age = ('input:text');
-			var warningMessageOK = "Jūs galite užeiti į svetainę";
-			var warningMessageNOT = "į svetainę užeiti negalite";
 		alert("warningMessageOK");
+		
+		function permitComeOnIn() {
+			var i = 0;
+			var age = document.getElementById('age').value;
+			var warningMessageOK = "Jūs galite užeiti į svetainę!!!";
+			var warningMessageNOT = "į svetainę užeiti negalite :( !!!";
 		if (age => 18)
 		{
 			alert("warningMessageOK");
 		}
-			else if
+			else if (age =< 18)
 			{
 				alert("warningMessageNOT");	
 			}
