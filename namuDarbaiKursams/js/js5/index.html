@@ -7,18 +7,21 @@
 </head>
 
 <body>
-		<p id="cont"></p>
-	
+		<p>Let's divide two numbers of yours choice!</p>
+		<input id="firstNumber" placeholder="insert a first number" /input>
+		<input id="secondNumber" placeholder="insert a second number"/input>
+		<button onclick="divise()">Calculate their division</button>
+		<p id="answer"></p>
+		
 	<script>
-	
-		var x = 10;
-		var y = 2;
-	
 		function divise()		{
-		 var division = x / y;
-		 document.write(division);
+			var x = document.getElementById("firstNumber").value;
+		 	var y = document.getElementById("secondNumber").value;
+		 	var divisionAnswer = Number(x) / Number(y);
+		 	var finalanswerPresentation = '<p>The result of your division is: '+ divisionAnswer + '</p>';
+				alert('The result of your division is : ' + divisionAnswer);
+				document.getElementById("answer").innerHTML = finalanswerPresentation;
 		}
-		alert('The result of this division is :' + ' ' + divise() );
 
 	</script>
 </body>
