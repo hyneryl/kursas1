@@ -4,38 +4,45 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>js - js6 age exercice</title>
+<!--
+		<style>
+			
+			#alertButton {
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+-->
 </head>
 
 <body>
 	
-	<p> Parašykite funkciją, kuri patikrina jūsų įvestą amžių. Jeigu jūsų amžius yra 18 ir daugiau, tada rodomas pranešimas, kad jūs galite užeiti į svetainę, priešingu atveju, rodomas pranešimas, kad į svetainę užeiti negalite.
+<!--
+	<button id="alertButton" onclick="alerting()">Please - click on this button!</button>
 	
-	</p>
-	<br>
+-->
+	<input id="age" type="text" placeholder="Please fill up your age:">	
+	<button onclick="permitComeOnIn()" id="submit" type="submit">Submit</button>
+	<p id="answer"></p>
 	
-	<input id="age" type="number" placeholder="įveskite savo amžių--Enter your age:" value="permitComeOnIn()">	
-	<button id="submit" type="submit">Submit</button>
-
 	<script>
 		
-		document.getElementById("submit").addEventListener("click",permitComeOnIn());
-		alert("warningMessageOK");
+//		function alerting(){
+//			alert('<input id="age" type="text" placeholder="Please fill up your age:">'+'<button onclick="permitComeOnIn()" id="submit" type="submit">Submit</button>'+'<p id="answer"></p>');
+//		}
 		
 		function permitComeOnIn() {
-			var i = 0;
-			var age = document.getElementById('age').value;
-			var warningMessageOK = "Jūs galite užeiti į svetainę!!!";
-			var warningMessageNOT = "į svetainę užeiti negalite :( !!!";
-		if (age => 18)
-		{
-			alert("warningMessageOK");
-		}
-			else if (age =< 18)
-			{
-				alert("warningMessageNOT");	
-			}
-		};
+			var age, acceptable;
+			age = document.getElementById("age").value;
 		
+		if (isNaN(age)) {
+			acceptable = 'this is not a number';
+		}	else {
+			acceptable = (age < 18) ? '<p style="color:red;"> Warning some datas are not destinated to young people like you!<br>Sorry you are too young!<br>See you later then when you will be grown up!</p>' : 'Welcome to our website!';
+		}
+			document.getElementById('answer').innerHTML = acceptable;
+			}
+
 	</script>	
 </body>
 </html>
