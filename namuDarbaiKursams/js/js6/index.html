@@ -36,7 +36,7 @@
 			age = document.getElementById("age").value;
 		
 		if (isNaN(age)) {
-			acceptable = 'this is not a number';
+			acceptable = '<p style="color:red;">Warning!<br>This is not a number!</p>';
 		}	else {
 			acceptable = (age < 18) ? '<p style="color:red;"> Warning some datas are not destinated to young people like you!<br>Sorry you are too young!<br>See you later then when you will be grown up!</p>' : 'Welcome to our website!';
 		}
