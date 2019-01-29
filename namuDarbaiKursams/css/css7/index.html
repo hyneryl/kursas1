@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/myStyle.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Coiny&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
     <title>CALENDAR</title>
+    
+ <!--
     <style>
         body {
             background-color: #ffffcc;
-            font-family: 'Font Name', serif;
-/*					a changer */
         }
         .month {
             text-transform: uppercase;
@@ -43,7 +43,7 @@
         }
         
         .date {
-/*            padding: 3px;*/
+            padding: 3px;
 						background-color: red;
 						margin: 8px;
 						padding: -8px;
@@ -90,128 +90,374 @@
         }
          
     </style>    
+-->
 </head>
 
 <body>
-   <div class="container">
-       <h1 class="month">Rugpjūtis</h1>
-    <div class="calendar">
-        <div class="box workdays">pirmadienis</div>
-        <div class="box workdays">antradienis</div>
-        <div class="box workdays">treciadienis</div>
-        <div class="box workdays">ketvertadienis</div>
-        <div class="box workdays">penktadienis</div>
-        <div class="box workdays">Šeštadienis</div>
-        <div class="box workdays">Sekmadienis</div>
-        <div class="box">
-            <span class="date">1</span>
-						<p class="vsc">Learn to Code</p>
-        </div>
-        <div class="box">
-            <span class="date">2</span>
-            <p class="vsc">Learn to Code</p>
-        </div>
-        <div class="box">
-            <span class="date">3</span>
-            <p class="vsc">Learn to Code</p>
-        </div>
-        <div class="box">
-            <span class="date">4</span>
-            <p class="vsc">Learn to Code</p>
-        </div>
-        <div class="box">
-            <span class="date">5</span>
-        </div>
-        <div class="box">
-            <span class="date">6</span>
-             <p class="sport">Vilnius running</p>
-        </div>
-        <div class="box">
-            <span class="date">7</span>
-            
-        </div>
-        <div class="box">
-            <span class="date">8</span>
-        </div>
-        <div class="box">
-            <span class="date">9</span>
-            <p class="vsc">Learn to Code</p>
-        </div>
-        <div class="box">
-            <span class="date">10</span>
-             <p class="vsc">Learn to Code</p>
-        </div>
-        <div class="box">
-            <span class="date">11</span>
-            <p class="vsc">Learn to Code</p>
-        </div>
-        <div class="box">
-            <span class="date">12</span>
-             <p class="vsc">Learn to Code</p>
-        </div>
-        <div class="box">
-            <span class="date">13</span>
-        </div>
-        <div class="box">
-            <span class="date">14</span>
-            <p class="music">Concert</p>
-        </div>
-        <div class="box">
-            <span class="date">15</span>
-        </div>
-        <div class="box">
-            <span class="date">16</span>
-        </div>
-        <div class="box">
-            <span class="date">17</span>
-        </div>
-        <div class="box">
-            <span class="date">18</span>
-             <p class="music">Summer festival</p>
-        </div>
-        <div class="box">
-            <span class="date">19</span>
-        </div>
-        <div class="box">
-            <span class="date">20</span>
-        </div>
-        <div class="box">
-            <span class="date">21</span>
-            <p class="celebration">Vardadienis</p>
-        </div>
-        <div class="box">
-            <span class="date">22</span>
-            <p class="vsc">Learn to Code</p>
-        </div>
-        <div class="box">
-            <span class="date">23</span>
-        </div>
-        <div class="box">
-            <span class="date">24</span>
-        </div>
-        <div class="box">
-            <span class="date">25</span>
-        </div>
-        <div class="box">
-            <span class="date">26</span>
-        </div>
-        <div class="box">
-            <span class="date">27</span>
-        </div>
-        <div class="box">
-            <span class="date">28</span>
-        </div>
-        <div class="box">
-            <span class="date">29</span>
-        </div>
-        <div class="box">
-            <span class="date">30</span>
-        </div>
-        <div class="box">
-            <span class="date">31</span>
-        </div>
-    </div>
-   </div>     
+  <div id="content-wrapper">
+      <header>
+          <h1>Rugpjūtis</h1>
+      </header>
+      
+      <div id="calendar">
+          <ul class="weekdays">
+              <li>Pirmadienis</li>
+              <li>Antradienis</li>
+              <li>Trečiadienis</li>
+              <li>Ketvertadienis</li>
+              <li>Penktadienis</li>
+              <li>Šeštadienis</li>
+              <li>Sekmadienis</li>       
+          </ul>
+          
+          <ul class="days">
+              <li class="days other-month">
+                  <div class="date">27</div>
+                  <div class="event">
+                      <div class="vsc">
+                          html
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days other-month">
+                  <div class="date">28</div>
+                  <div class="event">
+                      <div class="vsc">
+                          html
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days other-month">
+                  <div class="date">29</div>
+                  <div class="event">
+                      <div class="vsc">
+                          html
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days other-month">
+                  <div class="date">30</div>
+                  <div class="event">
+                      <div class="vsc">
+                          html
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days other-month">
+                  <div class="date">31</div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">1</div>
+                  <div class="event">
+                      <div class="music">
+                          Concert: Andrius Mamontovas
+                      </div>
+                      <div class="event-time">
+                          19:00-23:00
+                      </div>
+                  </div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">2</div>
+              </li>
+          </ul>
+          
+          <ul class="days">
+              <li class="days">
+                  <div class="date">3</div>
+              </li>
+              <li class="days">
+                  <div class="date">4</div>
+                  <div class="event">
+                      <div class="vsc">
+                          css
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">5</div>
+                  <div class="event">
+                      <div class="vsc">
+                          css
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">6</div>
+                  <div class="event">
+                      <div class="vsc">
+                          css
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">7</div>
+                  <div class="event">
+                      <div class="vsc">
+                          css
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">8</div>
+                  <div class="event">
+                      <div class="sport">
+                          Football Match with Friends and after party in case...
+                      </div>
+                      <div class="event-time">
+                          10:00-13:00
+                      </div>
+                  </div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">9</div>
+              </li>
+          </ul>
+          
+          <ul class="days">
+              <li class="days">
+                  <div class="date">10</div>
+                  <div class="event">
+                      <div class="vsc">
+                          javascript
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">11</div>
+                  <div class="event">
+                      <div class="vsc">
+                          javascript
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">12</div>
+                  <div class="event">
+                      <div class="vsc">
+                          javascript
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">13</div>
+                  <div class="event">
+                      <div class="vsc">
+                          javascript
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">14</div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">15</div>
+                  <div class="event">
+                      <div class="music">
+                          Concert: Marijonas Mikutavicius
+                      </div>
+                      <div class="event-time">
+                          19:00-23:00
+                      </div>
+                  </div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">16</div>
+              </li>
+          </ul>   
+          
+          <ul class="days">
+              <li class="days">
+                  <div class="date">17</div>
+                  <div class="event">
+                      <div class="vsc">
+                          pHp
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">18</div>
+                  <div class="event">
+                      <div class="vsc">
+                          pHp
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">19</div>
+                  <div class="event">
+                      <div class="vsc">
+                          pHp
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">20</div>
+                  <div class="event">
+                      <div class="vsc">
+                          pHp
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">21</div>
+                  <div class="event">
+                      <div class="party">
+                          St Christophe party
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">22</div>
+                  <div class="event">
+                      <div class="sport">
+                          Vilnius Marathon
+                      </div>
+                      <div class="event-time">
+                          10:00-13:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">23</div>
+              </li>
+          </ul>
+          
+          <ul class="days">
+              <li class="days">
+                  <div class="date">24</div>
+                  <div class="event">
+                      <div class="vsc">
+                          mySql
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">25</div>
+                  <div class="event">
+                      <div class="vsc">
+                          mySql
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">26</div>
+                  <div class="event">
+                      <div class="vsc">
+                          mySql
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">27</div>
+                  <div class="event">
+                      <div class="vsc">
+                          mySql
+                      </div>
+                      <div class="event-time">
+                          18:30-21:30
+                      </div>
+                  </div>
+              </li>
+              <li class="days">
+                  <div class="date">28</div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">29</div>
+              </li>
+              <li class="days weekend">
+                  <div class="date">30</div>
+              </li>
+          </ul>
+          
+          <ul class="days">
+              <li class="days">
+                  <div class="date">31</div>
+              </li>
+              <li class="days other-month">
+                  <div class="date">1</div>
+              </li>
+              <li class="days other-month">
+                  <div class="date">2</div>
+              </li>
+              <li class="days other-month">
+                  <div class="date">3</div>
+              </li>
+              <li class="days other-month">
+                  <div class="date">4</div>
+              </li>
+              <li class="days weekend other-month">
+                  <div class="date">5</div>
+              </li>
+              <li class="days weekend other-month">
+                  <div class="date">6</div>
+              </li>
+          </ul>
+      </div>
+  
+  
+  </div><!-- End of Wrapper -->
+   
     
 </body>
 </html>

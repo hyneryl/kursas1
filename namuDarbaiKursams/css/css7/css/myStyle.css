@@ -1,88 +1,126 @@
-@media screen and (max-width:600px){
-.cols1{width: 8.33%}
-.cols2{width: 16.66%}
-.cols3{width: 25%}
-.cols4{width: 33.33%}
-.cols5{width: 41.66%}
-.cols6{width: 50%}
-.cols7{width: 58.33%}
-.cols8{width: 66.66%}
-.cols9{width: 75%}
-.cols10{width: 83.33%}
-.cols11{width: 91.66%}
-.cols12{width: 100%}
+body {
+    background-color: #ffff66;
+    font-family: 'ZCOOL KuaiLe', cursive;
 }
 
-@media screen and (min-width:601px){
-.colb1{width: 8.33%}
-.colb2{width: 16.66%}
-.colb3{width: 25%}
-.colb4{width: 33.33%}
-.colb5{width: 41.66%}
-.colb6{width: 50%}
-.colb7{width: 58.33%}
-.colb8{width: 66.66%}
-.colb9{width: 75%}
-.colb10{width: 83.33%}
-.colb11{width: 91.66%}
-.colb12{width: 100%}
+#calendar {
+    width: 100%;
 }
 
-body{
-	font-family: 'Indie Flower', cursive;
+#calendar a {
+    color: #666;
+    text-decoration: none;
 }
 
-.container{
-
+#calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    width: 100%;
 }
 
-.container h3{
-	text-transform: uppercase;
+#calendar li {
+    display: block;
+    float: left;
+    width: 14.2857142857%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
 }
 
-.box{
-	float: left;
-	flex-wrap: column wrap;
-	height: 125px;
-	width: 125px;
-	margin: 2px 2px 2px 2px;
-	background-color: white;
-	clear: right;
-	border: 1px;
-	box-shadow: 2px 2px 2px black;
+#calendar ul.weekdays {
+    height: 40px;
+    background: #ffa500;
 }
 
-.calendar{
-	width: 960px;
-	height: 740px;
-/*	float: right;*/
-}
-.box div{
-	padding-left: 10px;
-	background-color: #4db8ff;
-	color: #fff;
-	width: 25px;
-	border-radius: 50%;
-}
-.box:nth-child(7n+6)/* tous les 7 on commence tous les 6jours  pour les samedis*/ {
-	background-color: #ffa500;
-}
-.box:nth-child(7n+7)/* tous les 7jours on commence tous les 7jours pour les dimanches */ {
-	background-color: #ffa500;
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 18px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
 }
 
-.box:hover{
-	background: lightblue;
+#calendar .days li {
+    height: 180px;
+    transition: 0.6s;
 }
-.empty{
-	clear:left;
+
+#calendar .days li:hover {
+    background-color: #b3e6ff;
+    padding: 16px 10px;
+    transition: all 0.3s;
+    
 }
-span{
-	margin-left: 10px;
+
+#calendar .date {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #ffbb33;
+    color: aliceblue;
+    width: 25px;
+    border-radius: 50%;
+    float: left;
 }
-.sport{
-	background-color: limegreen;
+.weekend {
+	background-color: burlywood;
 }
-.music{
-	background-color: mediumpurple;
+#calendar .music {
+		background-color: #66ffb3;
+}
+#calendar .party {
+		background-color: #66ffb3;
+}
+#calendar .sport {
+		background-color: #80ff80;
+}
+#calendar .vsc {
+		background-color: #b366ff;
+}
+#calendar .event {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height: 14px;
+    background-color: #80ccff;
+    border: 1px solid #b5dbdc;
+    text-decoration: none;
+}
+	
+#calendar .music .sport .vsc .party {
+    color: #666;
+    margin: 6px 0 7px 0;
+    text-decoration: none;
+}
+
+#calendar .other-month {
+    background-color: #005580;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    #calendar .weekdays, #calendar .other-month {
+        display:none;
+    }
+    
+    #calendar li {
+        height: auto !important;
+        border: 1px solid #000;
+        border-radius: 3px;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
 }
