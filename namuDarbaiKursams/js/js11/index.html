@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculator</title>
+		<link href="css/myStyle.css" rel="stylesheet" type="text/css" />
+		<script src="javascript/action.js"></script>
+</head>
+
+<body>
+		<!-- GENERAL CONTAINER -->
+		<div id="calculBackground">
+			
+			<!-- Screen for the operationsCalculs and the result-->
+			<div id="result"></div>
+			
+			<div id="buttons">
+				<!-- for the numbers-->
+				<div id="numbers">
+					<button id="number1" class="touchBox" onclick="getNumber('number1')">1</button>	
+					<button id="number2" class="touchBox" onclick="getNumber('number2')">2</button>	
+					<button id="number3" class="touchBox" onclick="getNumber('number3')">3</button>	
+					<button id="number4" class="touchBox" onclick="getNumber('number4')">4</button>	
+					<button id="number5" class="touchBox" onclick="getNumber('number5')">5</button>	
+					<button id="number6" class="touchBox" onclick="getNumber('number6')">6</button>	
+					<button id="number7" class="touchBox" onclick="getNumber('number7')">7</button>	
+					<button id="number8" class="touchBox" onclick="getNumber('number8')">8</button>	
+					<button id="number9" class="touchBox" onclick="getNumber('number9')">9</button>	
+					<button id="number10" class="touchBox" onclick="getNumber('number10')">0</button>	
+					<button id="reset" class="touchBox" onclick="resetNumber()">C</button>
+					<button id="oper5" class="touchBox" onclick="calcul()">=</button>
+				<!-- For the operations-->
+					<div id="sign">
+						<button id="oper1" class="touchBox" type="button" onclick="getOperate('oper1')">+</button>
+						<button id="oper2" class="touchBox" type="button" onclick="getOperate('oper2')">-</button>
+						<button id="oper3" class="touchBox" type="button" onclick="getOperate('oper3')">*</button>
+						<button id="oper4" class="touchBox" type="button" onclick="getOperate('oper4')">/</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	
+	<script>
+		
+	
+	</script>
+</body>
+</html>
