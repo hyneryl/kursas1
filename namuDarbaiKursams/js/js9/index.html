@@ -1,50 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>js9</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 9 - hotels with empty rooms</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container {
+            color: #555544;
+            margin: 0;
+            padding: 10px;
+            background-color: #507090;
+        }
+        
+        #container h1 {
+            margin: 0;
+            background-color: darkgray;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        table {
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #705825;
+        }
+        
+        table th.first_number,
+        table th.second_number,
+        table th.third_number {
+            background-color: lightgray;
+            border-collapse: collapse;
+            padding: 10px;
+            color: #FF0505;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        
+        
+    </style>    
 </head>
 
 <body>
-		<h1>Viešbučiai (su laisvais kambariais)</h1>
-		<p id="cont"></p>
-		
-		
-		<p>Parašykite funkcija šiai obektų masyvo struktūrai išspausdinti į HTML:
-Kaip turi atrodyti vaizdas pateikta faile. Galite sukurti gražesnį stilių
-		</p>		
-		
-		
-	<script>
-		
-		var viesbuciai = [
-	{
-	"name": "Radisson",
-	"Address": "Konstitucijos pr. 29",
-	"Rooms":[
-	{"Number":210, "GuestCount":2, "Price":100},
-	{"Number":211, "GuestCount":2, "Price":110},
-	{"Number":212, "GuestCount":2, "Price":109}
-	]
-	},
-	{
-	"name": "Vilnius Inn",
-	"Address": "Šiaulių g. 3",
-	"Rooms":[
-	{"Number":11, "GuestCount":2, "Price":100},
-	{"Number":15, "GuestCount":1, "Price":58},
-	{"Number":22, "GuestCount":2, "Price":80},
-	{"Number":23, "GuestCount":2, "Price":99}
-	]
-	}
-	];
+  
+  <div id="container">
+      <h1 class="heading1">Hotels (with empty rooms)</h1>
+      
+      <h2 id="radisson"></h2>
+      <h3 id="first_hotel_address"></h3>
+    
+      <table style="width:100%">
+          <tr>
+            <th class="first_number">Room Number</th>
+            <th class="second_number">Number of guests</th> 
+            <th class="third_number">Price</th>
+          </tr>
+          <tr>
+            <td id="firstHotelRoomNumber1"></td>
+            <td id="firstHotelGuestNumber1"></td> 
+            <td id="firstHotelPrice1"></td>
+          </tr>
+          <tr>
+            <td id="firstHotelRoomNumber2"></td>
+            <td id="firstHotelGuestNumber2"></td> 
+            <td id="firstHotelPrice2"></td>
+          </tr>
+          <tr>
+            <td id="firstHotelRoomNumber3"></td>
+            <td id="firstHotelGuestNumber3"></td> 
+            <td id="firstHotelPrice3"></td>
+          </tr>
+       </table>
+       
+      <h2 id="holiday"></h2>
+      <h3 id="second_hotel_address"></h3>
+      
+      <table style="width:100%">
+          <tr>
+            <th class="first_number">Room Number</th>
+            <th class="second_number">Number of guests</th> 
+            <th class="third_number">Price</th>
+          </tr>
+          <tr>
+            <td id="secondHotelRoomNumber1"></td>
+            <td id="secondHotelGuestNumber1"></td> 
+            <td id="secondHotelPrice1"></td>
+          </tr>
+          <tr>
+            <td id="secondHotelRoomNumber2"></td>
+            <td id="secondHotelGuestNumber2"></td> 
+            <td id="secondHotelPrice2"></td>
+          </tr>
+          <tr>
+            <td id="secondHotelRoomNumber3"></td>
+            <td id="secondHotelGuestNumber3"></td> 
+            <td id="secondHotelPrice3"></td>
+          </tr>
+       </table>
+  
+  
+  </div>
+   
+   <script>
+       var hotels = [{
+        "name": "Radisson",
+        "Address": "Konstitucijos g. 29",
+        "Rooms":[
+        {"Number":210, "GuestCount":2, "Price":100},
+        {"Number":211, "GuestCount":2, "Price":110},
+        {"Number":212, "GuestCount":2, "Price":109}]}, {
+        "name": "Holiday Inn",
+        "Address": "Šiauliu g. 3",
+        "Rooms":[
+        {"Number":11, "GuestCount":2, "Price":100},
+        {"Number":15, "GuestCount":1, "Price":58},
+        {"Number":22, "GuestCount":2, "Price":80},
+        {"Number":23, "GuestCount":2, "Price":99}]}];
+   
+       /* Hotel number 1 Name and Address */ 
+       var firstHotelInfo = document.getElementById("radisson", "first_hotel_address").innerHTML = hotels[0]["name"] + "<br>" + "<br>" + hotels[0]["Address"];
+       
+       /* Hotel Number 1 Room Information */
+       document.getElementById("firstHotelRoomNumber1").innerHTML = hotels[0]["Rooms"][0]["Number"];
+       document.getElementById("firstHotelRoomNumber2").innerHTML = hotels[0]["Rooms"][1]["Number"];
+       document.getElementById("firstHotelRoomNumber3").innerHTML = hotels[0]["Rooms"][2]["Number"];
+       
+       document.getElementById("firstHotelGuestNumber1").innerHTML = hotels[0]["Rooms"][0]["GuestCount"];
+       document.getElementById("firstHotelGuestNumber2").innerHTML = hotels[0]["Rooms"][1]["GuestCount"];
+       document.getElementById("firstHotelGuestNumber3").innerHTML = hotels[0]["Rooms"][2]["GuestCount"];
+       
+       document.getElementById("firstHotelPrice1").innerHTML = hotels[0]["Rooms"][0]["Price"];
+       document.getElementById("firstHotelPrice2").innerHTML = hotels[0]["Rooms"][1]["Price"];
+       document.getElementById("firstHotelPrice3").innerHTML = hotels[0]["Rooms"][2]["Price"];
+       
+       
+       /* Hotel number 2 Name and Address */ 
+       var firstHotelInfo = document.getElementById("holiday", "second_hotel_address").innerHTML = hotels[1]["name"] + "<br>" + "<br>" + hotels[1]["Address"];
+       
+       /* Hotel Number 2 Room Information */
+       document.getElementById("secondHotelRoomNumber1").innerHTML = hotels[1]["Rooms"][0]["Number"];
+       document.getElementById("secondHotelRoomNumber2").innerHTML = hotels[1]["Rooms"][1]["Number"];
+       document.getElementById("secondHotelRoomNumber3").innerHTML = hotels[1]["Rooms"][2]["Number"];
+       
+       document.getElementById("secondHotelGuestNumber1").innerHTML = hotels[1]["Rooms"][0]["GuestCount"];
+       document.getElementById("secondHotelGuestNumber2").innerHTML = hotels[1]["Rooms"][1]["GuestCount"];
+       document.getElementById("secondHotelGuestNumber3").innerHTML = hotels[1]["Rooms"][2]["GuestCount"];
+       
+       document.getElementById("secondHotelPrice1").innerHTML = hotels[1]["Rooms"][0]["Price"];
+       document.getElementById("secondHotelPrice2").innerHTML = hotels[1]["Rooms"][1]["Price"];
+       document.getElementById("secondHotelPrice3").innerHTML = hotels[1]["Rooms"][2]["Price"];
+              
+    </script>       
 
-		function () {
-			
-		}
-
-		
-	</script>
 </body>
 </html>
