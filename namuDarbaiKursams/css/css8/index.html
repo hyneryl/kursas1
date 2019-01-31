@@ -1,76 +1,95 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>css - css8 formos</title>
-		<link href="css/myStyle.css" type="text/css" rel=stylesheet />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/myStyle.css" type="text/css" rel="stylesheet">
+    <title>css8 - form to fill in with Column System</title>
 </head>
 
 <body>
-	<div class="row cols12 colb8">
-		<h1>Registracija į renginį</h1>
-	</div>
-	
 	<div class="container">
-		
-		<div class="box1 cols12 colb12">
-			<div class="text cols11 colb11">
-				<h3>
-					Registracijos forma
-				</h3>
-				<p>
-					Jeigu norite užsiregistruoti į renginį, užpildikyte žemiau esančią formą. Žemiau lentelėje galite matyti jau užsiregistravusius dalyvius.
-				</p>
-			</div>
-			<div  class="tablbutton cols8 colb8">
-				<table>
-					<tr>
-						<td class="tabldata cols6 colb6">Vardas</td>
-						<td><input class="tablinput cols6 colb6" type="text" name="firstname" value=""></td>
-					</tr>    
-					<tr>
-						<td class="tabldata cols6 colb6">Pavardė</td>
-						<td><input class="tablinput cols6 colb6" type="text" name="lastname" value=""></td>
-					</tr>
-					<tr>	
-						<td class="tabldata cols6 colb6">Elektroninis paštas</td>
-						<td><input class="tablinput cols6 colb6" type="text" name="lastname" value=""></td>
-					</tr>    
-				</table>
-				<button class="tablbutton cols8 colb8">Registruoti</button>
-			</div>
-		</div>
-		
-		<div class="row box2 cols12 colb12">
-			<div class="containerb cols12 colb12">
-				<div class="textb cols6 colb6">
-					<h3>
-						Jau užsiregistravę dalyviai:
-					</h3>
-					
-				</div>
-			<table class="cols12 colb12">
-						<tr>
-							<th class="cols6 colb6" colspan="2">Vardas</th>
-							<th class="cols2 colb2">Pavardė</th>
-							<th class="cols4 colb4">Elektroninis paštas</th>
-						</tr>
-						<tr>
-							<td class="esp cols6 colb6" colspan="2">Jonas</td>
-							<td class="centering cols2 colb2">Jonaitis</td>
-							<td class="centering cols4 colb4">jonaits@gmail.com</td>
-						</tr>
-						<tr>
-							<td class="esp cols6 colb6" colspan="2">Petras</td>
-							<td class="centering cols2 colb2">Petraitis</td>
-							<td class="centering cols4 colb4">petraits@gmail.com</td>
-						</tr>
+			<h1>Registracija į renginį</h1>       
+			<section class="row">
+				<section class="col-s-12">
+					<div class="box">
+						 <div class="row">
+								 <article class="col-8">
+										 <div class="article">
+												<h3>Registracijos forma</h3>
+												<p>Jeigu norite užsiregistruoti į renginį, užpildykite žemiau esančią formą. Žemiau lentelėje galite matyti jau užsiregistravusius dalyvius</p>
+										 </div>
+								 </article>
 
-				</table>
-				
-			</div>
-		</div>
-	</div>	
+							 <div class="row">
+								 <article class="col-4">
+										<div class="box">
+											<div class="row">
+												<article class="col-s-12">
+													 <div class="labels">
+															<label for="name">Vardas</label><br><br>
+															<label for="surname">Pavardė</label><br><br>
+															<label for="email">Elektroninis paštas</label><br>
+													 </div>
+												</article>
+											</div>
+										</div>
+									</article>
+							 <article class="col-l-8 col-s-12">
+										<div class="box">
+												<div class="row">
+														<article class="col-s-12">
+															<input type="text" name="name" id="name">
+															<input type="text" name="name" id="surname">
+															<input type="email" name="email" id="email">
+														</article>
+												</div>
+										</div>
+								</article>
+								<article class="col-8">
+									<div class="box">
+										<div class="row">
+											<article class="col-s-12">
+													<div class="button">Registruoti</div>   
+											</article>
+										</div>
+									</div>
+								</article>
+							 </div>        
+						 </div>          
+					</div>   
+				</section>
+			</section>
+
+			<div class="box box1">
+				 <div class="row">
+					 <article class="col-8">
+						 <div class="article">
+								<h3>Jau užsiregistravę dalyviai:</h3>
+						 </div>
+					 </article>    
+				 </div>
+			 	<div class="row col-12">
+					<table>
+						 <tr class="table">
+								 <th>Vardas</th>
+								 <th>Pavardė</th>
+								 <th>Elektroninis paštas</th>                
+						 </tr> 
+						 <tr>
+								 <td>Jonas</td>
+								 <td>Jonaitis</td>
+								 <td>jonaitis@gmail.com</td>                 
+						 </tr>
+						 <tr>
+								 <td>Petras</td>
+								 <td>Petraitis</td>
+								 <td>petraitis@gmail.com</td>                 
+						 </tr>                          
+
+					</table>                         
+				</div>                                 
+			</div>                                     
+	</div>        
 </body>
 </html>

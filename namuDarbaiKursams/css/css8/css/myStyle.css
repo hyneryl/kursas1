@@ -1,134 +1,120 @@
-@media screen and (max-width:600px){
-.cols1{width: 8.33%}
-.cols2{width: 16.66%}
-.cols3{width: 25%}
-.cols4{width: 33.33%}
-.cols5{width: 41.66%}
-.cols6{width: 50%}
-.cols7{width: 58.33%}
-.cols8{width: 66.66%}
-.cols9{width: 75%}
-.cols10{width: 83.33%}
-.cols11{width: 91.66%}
-.cols12{width: 100%}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Media Queris */
+@media screen and (max-width:600px) {
+    .col-s-1{width:8.33%;}
+    .col-s-2{width:16.66;}
+    .col-s-3{width:25%;}
+    .col-s-4{width:33.33%;}
+    .col-s-5{width:41.66%;}
+    .col-s-6{width:50%;}
+    .col-s-7{width:58.33%;}
+    .col-s-8{width:66.66%;}
+    .col-s-9{width:75%;}
+    .col-s-10{width:83.33%;}
+    .col-s-11{width:91.66%;}
+    .col-s-12{width:100%;}
+    }
+
+@media screen and (min-width:601px) {
+    .col-l-1{width:8.33%;}
+    .col-l-2{width:16.66;}
+    .col-l-3{width:25%;}
+    .col-l-4{width:33.33%;}
+    .col-l-5{width:41.66%;}
+    .col-l-6{width:50%;}
+    .col-l-7{width:58.33%;}
+    .col-l-8{width:66.66%;}
+    .col-l-9{width:75%;}
+    .col-l-10{width:83.33%;}
+    .col-l-11{width:91.66%;}
+    .col-l-12{width:100%;}
 }
 
-@media screen and (min-width:601px){
-.colb1{width: 8.33%}
-.colb2{width: 16.66%}
-.colb3{width: 25%}
-.colb4{width: 33.33%}
-.colb5{width: 41.66%}
-.colb6{width: 50%}
-.colb7{width: 58.33%}
-.colb8{width: 66.66%}
-.colb9{width: 75%}
-.colb10{width: 83.33%}
-.colb11{width: 91.66%}
-.colb12{width: 100%}
+.container {
+    width: 756px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
+/* Row */
+.row, nav.row ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-body{
-	margin-left: 5px;
-	margin-top: -22px;
-	width: 100%;
+.box {
+    background-color: #FEF6A3;
+    padding: 0 10px 10px;
 }
-.container{
-	width: 80%;
+
+.box input[type="button"] {
+    text-align: center;
 }
-.box1{
-	width: 93%;
-	padding-left: 10px;
-	padding-bottom: 14px;
-	background-color: #ffffb3;
-	display: flex;
-	flex-wrap: wrap;
+
+.box1 {
+    min-height: 100px;
+    background-color: #C2FEBE;
+    margin-top: 5px;
 }
-.box2{
-	width: 93%;
-	margin-top: -7px;
-	padding-top: -7px;
-	display: flex;
-	flex-wrap: wrap;
+
+.row input {
+    width: 83%;
+    margin-left: 25%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px #111;
 }
-.text{
-	padding-top: 28px;
+
+.button {
+    height: 26px;
+    width: 570px;
+    padding: 7px 0 0;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #000;
+    background-color: lightgray;
 }
-.text p{
-	font-size: 14px;
+
+table {
+    width: 698px;
+    margin: 0 10px;
 }
-.tablbutton{
-	border-collapse: collapse;
+
+th {
+    background-color: #C8B8FF;
+    height: 35px;
 }
-.tablbutton table{
-	width: 100%;
-	border-collapse: collapse;
+
+th:nth-child(1) {
+    width: 455px;
 }
-.tablbutton tr{
-	line-height: 28px;
+
+td {
+    height: 35px;
+    padding: 0 10px;
 }
-.tablbutton td{
-	width: 50%;
-	border-collapse: collapse;
+
+table, td {
+  border: 1px solid black;
+    border-collapse: collapse;
 }
-.tabldata{
-	width: 50%;
-	border: 2x solid black;
-	border-collapse: collapse;
-	font-size: 14px;
+
+td {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
 }
-.tablinput{
-	line-height: 28px;
-	height: 30px;
-	width: 100%;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	padding-top: -8px;
-	padding-bottom: -8px;
-	border: 2x solid black;
-	border-radius: 4px 4px 4px 4px;
-	box-shadow: 2px 2px 2px	2px white inset;
-	border-collapse: collapse;
-}	
-.tablbutton button{
-	width: 100%;
-	border: 1x solid black;
-	border-radius: 4px 4px 4px 4px;
+
+tr:nth-child(2) {
+    box-shadow: inset 2px 0px 0px #000;
 }
-.containerb{
-	width: 90%;
-}
-.box2 div{
-	width: 100%;
-	margin-top: 14px;
-	background-color: #b3ffcc;
-}
-.textb{
-	padding-top: 7px;
-}
-.box2 h3{
-	padding-left: 10px;
-}
-th{
-	background-color: #cccccc;
-}
-.box2 table{
-	width: 95%;
-	justify-content: center;
-	align-items: center;
-	margin-left: 10px;
-	margin-right: -5px;
-	margin-bottom: 14px;
-	border: 1px solid black;
-	border-collapse: collapse;
-}
-.box2 table td{
-	border: 1px solid black;
-}
-.esp{
-	padding-left: 10px;
-}
-.centering{
-	text-align: center;
+
+tr:nth-child(3) {
+    box-shadow: inset 2px 0px 0px #000;
 }
