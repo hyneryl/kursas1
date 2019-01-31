@@ -14,27 +14,23 @@
 
 <body>
 	<p id="cont"></p>
-	<button id="submit" onclick="deleteName(namesArray, whatToDelete)" >Click on Me</button>
+	<button id="submit" onclick="deleteName()" >Click on Me</button>
 	
 	
 	<script>
 		
-		var namesBlock = {
-			vardai: ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"],
-			minusVardas: vardai[4];
-		};
+		var vardai =  ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+		var	minusVardas = vardai[4];      
+        
+        console.log(vardai);
+        document.getElementById('cont').innerHTML = vardai;
 		
-			var namesArray = namesBlock.vardai;
-			var whatToDelete = namesBlock.minusVardas;
+			function deleteName() {
+                vardai.splice( vardai.indexOf(minusVardas), 1 );
+				document.getElementById("cont").innerHTML = vardai; 
+				console.log(vardai);
+			}		
 		
-			function deleteName(namesArray, whatToDelete) {
-//				alert (namesBlock().indexOf(splice(2)));
-				document.getElementById("cont").innerHTML = namesArray - whatToDelete; 
-				console.log(deleteName(namesArray, minusVardas));
-			}
-		
-		//  first argument is array from where to delete / second argument is string to delete from array
-		deleteName(namesArray, minusVardas);
 		
 	</script>
 		
