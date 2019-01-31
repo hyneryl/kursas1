@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="lt">
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js10</title>
 </head>
 
 <body>
-		<p>parasykite funkcija, kuri spausdina prekiu sarasa konsoleje formatu pvz.:
-	
-		
-		
-		#1
-		Preke: Atsuktuvas
-		Pagaminimo data: 2018
-		Spalva: geltona
-		Kaina: 5 EUR
-		
-		#2
-		Preke: Raktas
-		Pagaminimo data: 2018
-		Spalva: pilka
-		Kaina: 2 EUR
-		
-	pradiniai duomenys:
-	</p>
-	
-	<script>
-	var objektas1 = {"id":
-	1,item":Atsuktuvas","date":"2018","color":"geltona","price":"5"};
-	 
-var objektas2 = {"id":
-	2,item":Raktas","date":"2018","color":"pilka","price":"2"};
-	
-	var objektuMasyvas = [objektas1,objektas2]; //
-		<-- sitas paduodamas jusu parasytai funkcijai kaip argumentas  
-			prekes (objektai) yra sudeti i objektu masyva. Objektu masyvas paduodamas funkcijai kaip argumentas
-				Pridedu paveiksleli kaip tai turi atrodyti Google Chrome narsykles konsoleje, jei rodo kitaip - netinka.$anchorScrollNeinka tiesog console.log(objektuMasyvas); reikia eiti per kiekviena objekta ir is kiekvieno objekto imti savybes jas apjungti su papildomu tekstu, kad gauti reikiama vaizda-->
-		
-	</script>
-		
-	
+  <script>
+      var objektas1 = {"id":1,"Preke":"Atsuktuvas","Pagamintas":"2018","Spalva":"geltona","Kaina": "5"};
+      var objektas2 = {"id":2,"Preke":"Raktas","Pagamintas":"2018","Spalva":"pilka","Kaina": "2"};
+      var objektuMasyvas = [objektas1,objektas2];
+      
+      
+      for(i=0; i < objektuMasyvas.length; i++) {
+          console.log("# " + objektuMasyvas[i].id);
+          console.log("Preke " + objektuMasyvas[i].Preke);
+          console.log("Pagamintas " + objektuMasyvas[i].Pagamintas);
+          console.log("Spalva " + objektuMasyvas[i].Spalva);
+          console.log("Kaina " + objektuMasyvas[i].Kaina);
+          console.log("\n");
+      }
+      
+      
+      Object.keys(objektas1).forEach(function (item) {
+	  console.log(item, objektas1[item]); // key
+	   // value
+      });
+      console.log("\n");
+      
+      Object.keys(objektas2).forEach(function (item) {
+	  console.log(item, objektas1[item]); // key
+	   // value
+      });
+      
+  </script>  
+    
 </body>
 </html>
