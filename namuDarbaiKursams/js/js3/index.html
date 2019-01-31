@@ -1,39 +1,89 @@
+nes (77 sloc) 1.99 KB
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js3 - js3 table</title>
+
+  <style>
+    table{
+      text-align: left;
+    }
+    table tr:nth-child(odd){
+      background-color: lightgray;
+      border-collapse: collapse;
+    }
+    th{
+      width: 80px;
+      vertical-align: top;
+    }
+    td{
+      width: 420px;
+    }
+  </style>
+
 </head>
 
 <body>
 
-			<p>Pagal duotą objektą, naudodami document.write turite sugeneruoti prekės aprašymą elektroninei parduotuvei. (pvz (tik kaip pvz) cia: https://i.stack.imgur.com/GiIsV.jpg )
-			Padarykite, kad spalva būtų pasirenkama.
-			color - savybės reikšmės (0 - "juoda", 1 - "raudona", 2 - "žalia", 3 - "sidabrinė");
-			isItNew - sąvybės reikšmė true, tai tekstas turi būti žalias, kitu atveju juodas.</p>
+  <div id="list">
+    <table>
+      <tr>
+        <th colspan="2" id="name"></th>
+      </tr>
+      <tr>
+        <th>Apirašymas:</th>
+        <td id="description"></td>
+      </tr>
+      <tr>
+        <th>Nuolaida %:</th>
+        <td id="discount"></td>
+      </tr>
+      <tr>
+        <th>Spalva:</th>
+        <td id="info"></td>
+      </tr>
+      <tr>
+        <th>Kaina:</th>
+        <td id="currency"></td>
+      </tr>
+    </table>
+  </div>
 
-	<script> 
-		
-		var preke = {
-		title: "Nešiojamas kompiuteris",
-		description: "NVIDIA GeForce GTX 1070 grafinis adapteris su Max-Q4 technologija, Intel Core 8th Generation procesorius ir pažangi aušinimo sistema suteikia reikiamą galią, nesvarbu, kur būtumėte.",
-		discount: 30,
-		isItNew: true,
-		color: 0,
-		price: 699.00,
-		currency: "EUR"
-		};
-		
-		var colorTrue, table1, th1, tr1 = "";
-		var brand = 
-		var th1 = '<th>' + title + '</th>';
-//		alert(th1);
-		var tr1 = '<tr>' + description +  
-		var table1 = '<table><th>' + title + '</th><tr></tr></table>'
+  <script>
+    var preke = {
+    title: "Nešiojamas kompiuteris",
+    description: "NVIDIA GeForce GTX 1070 grafinis adapteris su Max-Q4 technologija, Intel Core 8th Generation procesorius ir pažangi aušinimo sistema suteikia reikiamą galią, nesvarbu, kur būtumėte.",
+    discount: 30,
+    isItNew: false,
+    color: ["black", "red", "green", "silver"],
+    price: 699.00,
+    currency: "EUR"
+    };
+      
+    var sum = preke.price + " " + preke.currency;
+    var color1 = "";
+    var i = "0";
+    color1 = "<select>";
+      
+    for (i=0; i < preke.color.length; i++)
+      {
+        color1 += "<option>" + preke.color[i] + "</option>";
+      }
+    color1 += "</select>";
+      
+    document.getElementById("name").innerHTML = preke["title"];
+    document.getElementById("description").innerHTML = preke["description"];
+    
+    document.getElementById("info").innerHTML = color1;
+    document.getElementById("discount").innerHTML = preke["discount"];
+    document.getElementById("currency").innerHTML = sum;
+      
+    if (preke.isItNew == true) {
+      document.getElementById("list").style.color = "green";
+    }
+  </script>
 
-		document.write("table1");
-	
-	</script>
 </body>
 </html>

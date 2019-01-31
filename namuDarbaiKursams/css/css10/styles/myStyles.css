@@ -1,0 +1,157 @@
+body {
+    background-color:#fcfcfc;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:600px){
+	.cols1{width: 8.33%;}
+	.cols2{width: 16.66%;}
+	.cols3{width: 25%;}
+	.cols4{width: 33.33%;}
+	.cols5{width: 41.66%;}
+	.cols6{width: 50%;}
+	.cols7{width: 58.33%;}
+	.cols8{width: 66.66%;}
+	.cols9{width: 75%;}
+	.cols10{width: 83.33%;}
+	.cols11{width: 91.66%;}
+	.cols12{width: 100%;}
+}
+
+@media screen and (min-width:601px){
+	.colb1{width: 8.33%;}
+	.colb2{width: 16.66%;}
+	.colb3{width: 25%;}
+	.colb4{width: 33.33%;}
+	.colb5{width: 41.66%;}
+	.colb6{width: 50%;}
+	.colb7{width: 58.33%;}
+	.colb8{width: 66.66%;}
+	.colb9{width: 75%;}
+	.colb10{width: 83.33%;}
+	.colb11{width: 91.66%;}
+	.colb12{width: 100%;}
+    
+ section {
+    justify-content: center;
+   	padding: 0 10%;
+}
+}
+
+.cover {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/112/146/non_2x/teal-free-vector-watercolor-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.cover-feature {
+    color: aliceblue;
+    text-align: center;
+}
+
+.row, nav.row ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+nav.row ul li{
+  color: aliceblue;
+	list-style-type: none;
+  margin-right: 20px;
+	padding: 5px;
+}
+
+nav.row ul li a{
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav.row li a:hover {
+    color: beige;
+    font-weight: bold;
+    transition: all 0.3s; 
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.center{
+	justify-content: center;
+}
+
+.box{
+	background-color:#f9f9f9;
+  margin-top: 60px;
+	min-height: 100px;
+}
+
+.article{
+	padding: 10px;
+	text-align: justify;
+}
+
+.article figure {
+    float: left;
+    width: 150px;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.article img {
+    width: 100%;
+    height: auto
+}
+
+.image {
+    height: 100%;
+    box-shadow: 2px 2px 4px #777
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+
+section {
+    padding: 0 20px;
+    justify-content: center;
+}
+
+footer {
+    height: 50px;
+    background-color: #000;
+    justify-content: center;
+    color: aliceblue;
+}
+
+footer img {
+    width: 12px;
+}

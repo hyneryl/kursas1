@@ -1,0 +1,23 @@
+nav {
+    background-color: #69A031;
+}
+
+.card-image {
+    height: 480px;
+    margin: 5px 8px;
+    overflow: hidden;
+}
+
+.card-image h4 {
+    margin-bottom: 10px;
+}
+
+.card-image p {
+    font-size: 12px;
+}
+
+@media screen and (max-width:600px) {
+    .card-image {
+        padding: 0 2rem;
+    }
+}

@@ -1,44 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>css10 - sections-article</title>
-		<link href="css/">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<style>
-			#container {
-				border: 5px;
-			}
-			section {
-				border: 5px;
-			}
-		</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Cool Website</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
+	<link href="css/myStyles.css" type="text/css" rel="stylesheet" >
 </head>
 
 <body>
-	<div id="container">
-		<section id="headerSection1">
-			<header>
-				<h1>Mano svetainė</h1>			
-			</header>
+	<div class="container">
+		
+		<nav class="row center">
+			<ul>
+				<li><a href="#">1st Article</a></li>
+				<li><a href="#">2nd Article</a></li>
+				<li><a href="#">3rd Article</a></li>
+			</ul>
+		</nav>
+		
+		<div class="cover">
+            <div class="cover-feature wow fadeIn" data-wow-delay:0.5s>
+                <h1>Hello</h1>
+                <p>Welcome to my website</p>
+            </div>		
+        </div>
+		
+		<section class="row">
+			
+			<section class="cols12 colb12">
+				<div class="box">
+					<div class="row">
+						<article class="cols12 colb12">
+							<div class="article">
+								<h3>Learn jQuery in 15 minutes</h3>
+								<div class="image">
+								    <img src="img/0.jpg" alt="First Image">
+                                </div>	
+							</div>
+						</article>
+
+						<article class="cols12 colb9">
+							<div class="article">
+								<h3>Why Learning to Code is So Damn Hard?</h3>
+								<p>Quincy Larson was just a "guy in a suit in an office" and decided he wanted to learn how to code. So he asked around. He started by picking up a bit of Ruby then found himself skimming through other languages like Scala, Clojure and Go. He learned Emacs then Vim and even the Dvorak keyboard layout. He picked up Linux, dabbled in Lisp and coded in Python while living on the command line for more than half a year....<a href="#" class="more">more text</a></p>
+							</div>
+						</article>
+						
+						<article class="cols12 colb3">
+							<div class="article">
+                                <div class="image">
+                                    <img src="img/coding.jpg" alt="Coding Image"> 
+                                </div>
+							</div>
+						</article>
+						<article class="cols12 colb3">
+							<div class="article">
+                                <div class="image">
+                                    <img src="img/coding_is_hard_phase_i_conf_comp.png" alt="Coding Image"> 
+                                </div>
+							</div>
+						</article>
+						<article class="cols12 colb9">
+							<div class="article">
+								<h3>The Hand-Holding Honeymoon</h3>
+								<p>It's really hard to blame anyone for coming into the programming industry with outrageous expectations.
+
+On the one hand, you've heard rumors of how difficult programming is since you were young, like old wives tales meant to scare children into studying social sciences instead.
+
+On the other, the "Learn to Code" movement has done a fantastic job of breaking down barriers and showing people that code is actually quite harmless. Tools like Codecademy and Treehouse and Code School reach out with the gentlest of touches to assure you that you too (nay, anyone!) can not just learn to code but become a full-fledged developer as well.</p>
+							</div>
+						</article>
+						<article class="cols12 colb12">
+							<div class="article">
+                                <blockquote><p>
+                                    ... was convinced that the seemingly normal programmers I ran into were actually sociopaths who had experienced, then repressed, the trauma of learning to code.
+                                </p></blockquote>	
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			
 		</section>
 		
-		<section id="main">
-			<div id="firstArticle">
-				<article>
-					Pirmas straipsnis
-				</article>				
-				
-				
-			</div>
-		</section>
-		
-		
-		
-		
-		
-		
+		<footer class="row">
+            <p>Made with <img class="heart" src="img/342px-A_perfect_SVG_heart.svg.png"> by Chris</p>
+		</footer>
 		
 	</div>
 </body>
