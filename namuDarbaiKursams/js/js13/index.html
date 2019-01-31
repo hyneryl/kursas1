@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS13</title>
+    <style>
+    body {
+        padding: 0;
+        margin: 0;
+    }    
+    .container {
+        background-color: #cdcdcd;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 756px;
+        text-align: center; 
+    }
+        
+    .container h1 {
+        font-family: fantasy;
+        font-size: 50px;
+        margin: 0;
+        padding: 3rem;
+    }    
+        
+    #images img {
+        height: 140px;
+        padding: 20px;
+        transition: transform 0.2s;
+        width: 200px;
+    } 
+    
+    #images img:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s;
+    } 
+                
+    </style>    
+</head>
+
+<body>
+   <div class="container">
+       <a onclick="getImages()" id="button"><div id="images"></div></a>      
+   </div>  
+   
+           
+   <script>
+       var images = ["https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/bycycle.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/chess.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/jump.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/kiting.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/lion.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/onwater.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/para.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/photographer.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/pieva.jpg", "https://raw.githubusercontent.com/zigmantasvcs/resources/master/images/offers/supynes.jpg"];
+       
+       var gallery = '<h1>' + "Galerija" + '</h1>';   
+       for (i=0; i < images.length; i++) {
+           gallery += '<img src="' + images[i] + '">'
+       }
+       document.getElementById('images').innerHTML = gallery;
+    
+   </script>      
+    
+</body>
+</html>
