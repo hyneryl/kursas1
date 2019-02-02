@@ -43,19 +43,18 @@ body {
 .cover {
     align-items: center;
     background-attachment: fixed;
-		background-image: url(https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiIoITU45rgAhXKBSwKHR4tDBoQjRx6BAgBEAU&url=https%3A%2F%2Fwww.imagenesmy.com%2Fimagenes%2Fdark-worship-backgrounds-cf.html&psig=AOvVaw1E6yRHs8ApGFN5sl2JF6EP&ust=1549118671063792);
     background-repeat: no-repeat;
     background-size: cover;
-		border: 2px;
 		border-style: outset;
-		color: grey;
+		text-decoration-color: black;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .cover-feature {
-    color: aliceblue;
+		margin-top: 50px;
+    color: dimgrey;
     text-align: center;
 }
 
@@ -85,7 +84,7 @@ nav.row li a:hover {
 }
 
 nav {
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: lightslategrey;
 	height: 50px;
 	position: fixed;
 	width: 100%;
@@ -120,6 +119,7 @@ nav {
 }
 
 .image {
+		float: left;
     box-shadow: 2px 2px 4px #777;
     height: 25%;
 		width: 25%;
@@ -152,7 +152,7 @@ section {
 
 footer {
     height: 50px;
-    background-color: #000;
+    background-color: lightslategrey;
     justify-content: center;
     color: aliceblue;
 }
