@@ -1,92 +1,131 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Cool Website</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
+	<title>My Website</title>
 	<link href="css/myStyles.css" type="text/css" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
 </head>
 
 <body>
-	<div class="container">
-		
-		<nav class="row center">
+	<div class="card text-center">
+  <div class="card-header shadow p-3 mb-5 bg-white rounded">
+    <nav class="row center">
 			<ul>
 				<li><a href="#">1st Article</a></li>
 				<li><a href="#">2nd Article</a></li>
 				<li><a href="#">3rd Article</a></li>
+				<li><a href="#bottom" alt="to the bottom">DOWN</a></li>
 			</ul>
 		</nav>
-		
-		<div class="cover">
-            <div class="cover-feature wow fadeIn" data-wow-delay:0.5s>
-                <h1>Hello</h1>
-                <p>Welcome to my website</p>
-            </div>		
-        </div>
-		
-		<section class="row">
+  </div>
+  <div class="cover">
+			<div class="cover-feature wow fadeIn" data-wow-delay:0.5s>
+					<h1>Sveiki atvyki</h1>
+					<p>į mano svetainę</p>
+			</div>		
+		</div>
+	<div class="card-body shadow p-3 mb-5 bg-white rounded">
+   
+    <section class="row">
 			
-			<section class="cols12 colb12">
+			<section class="cols12 colb12 shadow p-3 mb-5 bg-white rounded">
 				<div class="box">
 					<div class="row">
 						<article class="cols12 colb12">
-							<div class="article">
-								<h3>Learn jQuery in 15 minutes</h3>
-								<div class="image">
-								    <img src="img/0.jpg" alt="First Image">
-                                </div>	
-							</div>
-						</article>
-
-						<article class="cols12 colb9">
-							<div class="article">
-								<h3>Why Learning to Code is So Damn Hard?</h3>
-								<p>Quincy Larson was just a "guy in a suit in an office" and decided he wanted to learn how to code. So he asked around. He started by picking up a bit of Ruby then found himself skimming through other languages like Scala, Clojure and Go. He learned Emacs then Vim and even the Dvorak keyboard layout. He picked up Linux, dabbled in Lisp and coded in Python while living on the command line for more than half a year....<a href="#" class="more">more text</a></p>
-							</div>
-						</article>
-						
-						<article class="cols12 colb3">
-							<div class="article">
-                                <div class="image">
-                                    <img src="img/coding.jpg" alt="Coding Image"> 
-                                </div>
-							</div>
-						</article>
-						<article class="cols12 colb3">
-							<div class="article">
-                                <div class="image">
-                                    <img src="img/coding_is_hard_phase_i_conf_comp.png" alt="Coding Image"> 
-                                </div>
-							</div>
-						</article>
-						<article class="cols12 colb9">
-							<div class="article">
-								<h3>The Hand-Holding Honeymoon</h3>
-								<p>It's really hard to blame anyone for coming into the programming industry with outrageous expectations.
-
-On the one hand, you've heard rumors of how difficult programming is since you were young, like old wives tales meant to scare children into studying social sciences instead.
-
-On the other, the "Learn to Code" movement has done a fantastic job of breaking down barriers and showing people that code is actually quite harmless. Tools like Codecademy and Treehouse and Code School reach out with the gentlest of touches to assure you that you too (nay, anyone!) can not just learn to code but become a full-fledged developer as well.</p>
-							</div>
-						</article>
-						<article class="cols12 colb12">
-							<div class="article">
-                                <blockquote><p>
-                                    ... was convinced that the seemingly normal programmers I ran into were actually sociopaths who had experienced, then repressed, the trauma of learning to code.
-                                </p></blockquote>	
-							</div>
+							<div class="article1">
+								<h3>Sunday Times journalist Marie Colvin was murdered by Assad</h3>
+								<img class="image" src="images/buda_small.jpg" alt="First image Buda1">
+								<p>A US court has found the Syrian regime liable for the murder of the Sunday Times war correspondent Marie Colvin and imposed punitive damages of $300 million. Judge Amy Jackson ruled that the Assad regime deliberately targeted Colvin, 56, in an artillery attack to silence her reporting from the besieged Syrian enclave of Baba Amr in the city of Homs in 2012. The...<a href="#" class="more">Read the full story --></a></p> 
+							</div>	
 						</article>
 					</div>
-				</div>
+<aside class="row">
+	<article class="cols12 colb9">
+	<div class="article2">
+		<h3>Bitter split on assisted dying hits Royal College of Physicians</h3>
+		<p>Doctors are in open revolt against their professional body amid claims that the Royal College of Physicians has been captured by lobbyists for assisted dying. A former official has threatened legal action over a new vote on the...<a href="#" class="more">Read the full story --></a></p>
+		<div class="image">
+			<img src="images/buda_small.jpg" alt="second image Buda2">
+		</div>
+	</div>
+	</article>
+
+	<article class="cols12 colb3">
+	<div class="article2">
+		<h3>Giving statins to all older people could save 8,000 lives every year</h3>
+		<p>Everyone over the age of 75 should be considered for cholesterol-lowering statins, experts have urged, after an analysis found up to 8,000 lives a year could be saved. The research, which pools data from 28 gold-standard...<a href="#" class="more">Read the full story --></a></p>
+	</div>
+	<div class="image">
+			<img src="images/buda_small.jpg" alt="second image Buda2">
+		</div>
+	</article>
+	<article class="cols12 colb3">
+	
+	</article>
+</aside>
+<aside class="row">
+	<article class="cols12 colb9">
+	<div class="article2">
+		<h3>Medics in US find fault with Andy Murray’s care</h3>
+		<p>Sir Andy Murray has been involved in plenty of battles on the tennis court but he would never have expected to be at the centre of a row over IV tubes. The former world No 1 has provoked a dispute between medical professionals after posting a picture of himself recuperating from surgery....<a href="#" class="more">Read the full story --></a></p>
+		<div class="image">
+			<img src="images/buda_small.jpg" alt="second image Buda2">
+		</div>
+	</div>
+	</article>
+
+	<article class="cols12 colb3">
+	<div class="article2">
+		<h3>Military might is key to unseating Maduro</h3>
+		<p>In normal times, President Maduro is known not to be an early riser. His public appearances are rarely scheduled before noon. “I sleep like a child,” he once said in a television interview. This week has been different. Twice the president has been seen at a local army barracks indulging in an early morning jog with the troops. He is not...<a href="#" class="more">Read the full story --></a></p>
+	</div>
+	<div class="image">
+			<img src="images/buda_small.jpg" alt="second image Buda2">
+		</div>
+	</article>
+	<article class="cols12 colb3">
+	
+	</article>
+</aside>
+				
+<aside class="row">
+	<article class="cols12 colb9">
+	<div class="article2">
+		<h3>US poised to pull out of Reagan-Gorbachev nuclear treaty with Russia</h3>
+		<p>Fears are rising about a potential new arms race in Europe as the United States prepares to suspend a landmark armament control treaty with Russia. Mike Pompeo, the US Secretary of State, is expected to announce today that the US will pull out of the Intermediate Nuclear Forces (INF) treaty, signed by Ronald Reagan...<a href="#" class="more">Read the full story --></a></p>
+		<div class="image">
+			<img src="images/buda_small.jpg" alt="second image Buda2">
+		</div>
+	</div>
+	</article>
+
+	<article class="cols12 colb3">
+	<div class="article2">
+		<h3>Downbeat Amazon outlook takes gloss off record profit</h3>
+		<p>Amazon posted another record profit last night as it beat Wall Street’s fourth-quarter forecasts but gave investors cause for concern with a disappointing outlook. The company blamed unfavourable foreign exchange rates for first-quarter sales guidance that undershot analysts’ estimates. After...<a href="#" class="more">Read the full story --></a></p>
+	</div>
+	<div class="image">
+			<img src="images/buda_small.jpg" alt="second image Buda2">
+		</div>
+	</article>
+</aside>
+				
+					</div>
+					
 			</section>
 			
 		</section>
 		
-		<footer class="row">
-            <p>Made with <img class="heart" src="img/342px-A_perfect_SVG_heart.svg.png"> by Chris</p>
+  <div class="card-footer text-muted">
+    <footer id="bottom" class="row">
+            <p>Made with by Chris <a href="#top" alt="to the top"UP></a></p>
 		</footer>
+  </div>
+	</div>
 		
 	</div>
 </body>

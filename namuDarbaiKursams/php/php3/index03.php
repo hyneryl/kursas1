@@ -1,4 +1,4 @@
-<!--exercice 3-->
+<!--exercice 3.1-->
 <br>
 <?php 
 	$x = 10; 

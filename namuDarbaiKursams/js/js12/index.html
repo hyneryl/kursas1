@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js12</title>
+	<style>
+		header{
+			height: 50px;
+			background-color: purple;
+		}
+		main{
+			background-color: blue;
+            display: none;
+            height: 600px;
+		}
+        
+	</style>
+</head>
+	
+<body>
+	
+		<div class="container">
+			<header></header>
+			<main class="hide"></main>
+		</div>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+		<script>
+			$(document).ready(function(){
+              $("header").click(function(){
+                $("main").toggle(
+                    function(){
+                        $('main').animate({
+                            height: "600px", 
+                            backgroundColor:'#FF8258',
+                            opacity:.8
+                        }, 500);
+                    });
+              });
+            });
+		</script>
+</body>
+</html>
