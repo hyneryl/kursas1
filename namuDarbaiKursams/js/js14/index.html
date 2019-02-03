@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+body {
+    font-family: Helvetica Neue,sans-serif;
+    background-color: #ccc;
+    color: dimgray;
+}
+/* Centering Content */
+.container {
+    display: grid;
+    width: 90%;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+}    
+			
+.blue_header {
+    color: lightskyblue;
+}
+			
+.discription {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+			
+.bold_text {
+    font-weight: bold;
+}
+.crossed_price {
+    font-weight: 200;
+    margin: 0;
+    text-decoration: line-through;
+}
+			
+.text_light {
+    color: lightgrey;
+}
+			
+h2 {margin: 20px 0 0; 
+    padding-left: 3px; 
+    font-weight: 500; 
+    word-spacing: 5px;
+}
+.button {
+    height: 50px;
+    width: 100px;
+    background-color: #A0DC42;
+    color: antiquewhite;
+    font-size: 18px;
+    border: 1px solid #A0DC42;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #A0DC42;
+}
+.button:hover {
+    background-color: #85ba32;
+    transition: 1s;
+    cursor: pointer;
+}
+        
+#box{
+    float: left;
+    height: 540px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px silver;
+    margin: 5px;
+    padding: 20px;
+    text-align: left;
+} 
+			
+#box:hover {
+    border: 1px solid #0073e6;
+    box-shadow: 1px 2px 2px #0073e6;
+    cursor: pointer;
+}
+
+img.thumbnail {
+    width: 200px;
+    height: auto;
+}  
+@media screen and (max-width: 600px) {
+    #box{
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        height: 460px;
+    }
+} 
+        
+.row {
+    position: absolute;
+    left: 10%;
+}        
+    </style>    
+    <title>js14 - Online Store exercice</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="row">
+           <article class="col-l-4 col-s-6 col-xs-12">
+                 <div id="showItems">
+                  <div id="box">
+                       <img class="thumbnail" alt="Laptop Image">
+                       <div class="left_aligned">
+                           <h3 class="blue_header"></h3>
+                           <p class="discription"><span class="bold_text"></span></p>
+                           <h2></h2>
+                           <h3 class="crossed_price"></h3>
+                           <p class="text_light">+ 7,01 € Kompensacinis atlyginimas autoriams</p>
+                       </div>
+                   </div>  
+                </div>
+           </article>      
+        </section>
+    </div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <script>
+    $(document).ready(function() {
+        var showItems = $("#showItems");
+        $.ajax({
+            type: "GET",
+            url: 'http://kitchenoffice.eu/service/computers.php',
+            dataType: 'json',
+            success: function(result) {
+                console.log(result);
+                var output = '<div class="left-aligned">';
+                for (var i in result) {
+                    output += '<div id="box">';
+                    output += '<img class="thumbnail" src="' + result[i].image + '">';
+                    output += '<h3 class="blue_header">' + result[i].item + '</h3>';
+                    output += '<span class="bold_text">' + result[i].descriptions + '</td>';
+                    output += '<h2>' + result[i].price + '€' + '</h2>';
+                    output += '<h3 class="crossed_price">' + result[i].oldprice + '€' + '</td></h3>';
+                    output += '<input class="button" type="button" value="Užsakyti" />';
+                    output += '<p class="text_light">+ 7,01 € Kompensacinis atlyginimas autoriams</p>';
+                    output += '</div>';
+                }
+                output += '</div>';
+                showItems.html(output);
+            }
+        });
+    });
+    </script>                              
+</body>
+</html>
