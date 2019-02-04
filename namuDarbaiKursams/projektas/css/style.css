@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #444;
+	color: #fff;
+	height: 100%;
+	margin: 0;
+	font-family: ;/* à préciser*/
+	line-height: 1.5;
+}
+	
+/*  heading */ 
+h1, h2, h3 {
+	margin: 0;
+	font-weight: 400;
+	& .lg-heading
+}
+
+ul {
+	float: right;
+	list-style:none;
+}	
+
+li {
+	display: inline-block;
+	margin-bottom:15px; /*à adapter */
+	padding-left: 15px;
+}
+i {
+	color: #f50505;
+}
