@@ -30,7 +30,7 @@
 	
 	// try with function copyright()
 	$name = 'chrismarie.eu';
-	$fromYear = 2030; // Set your website start date
+	$fromYear = 2051; // Set your website start date
 	$thisYear = date('Y'); // Keeps the second year updated
 	function copyright($name, $fromYear = null){
 			$thisYear = date("Y");
@@ -44,6 +44,17 @@
 
 	//Example
 	echo '<br>' . copyright($name, $fromYear);
+?>
+	<?php
+	// try simplier version
+    $name = 'chrismarie.eu';
+		$fromYear = 2011;
+    $thisYear = (int)date('Y');
+    if($fromYear >= $thisYear) {
+        echo $name . " &copy; $thisYear";
+    } else {
+        echo $name . ' &copy;' .$fromYear. '-' .$thisYear. '<br>';
+    }
 ?>
 
 	
