@@ -29,34 +29,31 @@ function autoSelectLanguage($aLanguages, $sDefault = 'en') {
 <?php
 session_start ();
 $langue = autoSelectLanguage(array('fr','en','lt'), 'en');
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html <?php echo ('lang='.$langue); ?> >
  <head>
  <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> 
  <link rel="stylesheet" href="css/main.css">
- <title>Welcome To My Portfolio</title>
+ <?php include('includes/'.$langue.'/title_'.$langue. '.php'); ?>
  </head>
  <body id="bg-img">
- <?php include('includes/'.$langue'/header.php'); ?>
+ <?php include('includes/'.$langue.'/header_'.$langue.'.php'); ?>
 
 
 <?php
-
-  if ($_SESSION['menu'] == 'home' ) {
-    include('includes/'.$langue'/main-'.$_SESSION['menu'].'_'.$langue.'.php');
-  } else if ($_SESSION['menu'] == "contact" ) {
-    include("includes/main-".$_SESSION['menu']."_".$langue.".php");
-  }
-} else {
-$_SESSION['menu'] = "home";
-    include("includes/main-home.php");
+if (!isset($_SESSION['menu']) ) {
+$_SESSION['menu'] = 'home';
 }
-?>
+include('includes/'.$langue.'/main-'.$_SESSION['menu'].'_'.$langue.'.php');
 
+include('includes/'.$langue.'/footer_'.$langue.'.php');
+
+?>
  <script src="js/main.js"></script>
 
 
