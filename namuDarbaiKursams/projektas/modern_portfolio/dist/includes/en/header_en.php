@@ -32,8 +32,8 @@
 		</ul>
 	</nav>
 	<ul class="lang">
-		<li><a href="index.php" alt="English" title="English">EN</a></li>
-		<li><a href="../../fr/index.php" alt="Français" title="Français">FR</a></li>
-		<li><a href="../../lt/index.php" alt="lietuvių" title="lietuvių">LT</a></li>
+		<li><a href="en.php" alt="English" title="English">EN</a></li>
+		<li><a href="fr.php" alt="Français" title="French">FR</a></li>
+		<li><a href="lt.php" alt="lietuvių" title="Lithuanian">LT</a></li>
 	</ul>
 </header>

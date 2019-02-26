@@ -9,7 +9,7 @@
 	<div class="projects">
 		<div class="item">
 			<a href="#!">
-				<img src="../../img/projects/project1.jpg" alt="Projet Fiche renseignement" title="Projet Fiche renseignement">
+				<img src="img/projects/project1.jpg" alt="Projet Fiche renseignement" title="Projet Fiche renseignement">
 			</a>
 			<a href="#" class="btn-light">
 				<i class="fas fa-eye"></i> Projet Fiche renseignement
@@ -20,7 +20,7 @@
 		</div>
 		<div class="item">
 			<a href="https://github.com/hyneryl/kursas1/tree/master/namuDarbaiKursams/css/css4" title="Projet site Web Musical" alt="Projet site Web Musical">
-				<img src="../../img/projects/project2.jpg" alt="Projet">
+				<img src="img/projects/project2.jpg" alt="Projet">
 			</a>
 			<a href="#" class="btn-light">
 				<i class="fas fa-eye"></i> Projet site Web Musical
@@ -31,7 +31,7 @@
 		</div>
 		<div class="item">
 			<a href="https://github.com/hyneryl/kursas1/tree/master/namuDarbaiKursams/css/css11" title="Projet Offre" alt="Projet Offre">
-				<img src="../../img/projects/project3.jpg" alt="Projet">
+				<img src="img/projects/project3.jpg" alt="Projet">
 			</a>
 			<a href="#" alt="Offer Project" class="btn-light">
 				<i class="fas fa-eye"></i> Projet Offre
@@ -42,7 +42,7 @@
 		</div>
 		<div class="item">
 			<a href="https://github.com/hyneryl/kursas1/commit/704cad8c13886f25c515e62a95f915cdb08f4026">
-				<img src="../../img/projects/project4.jpg" title="Projet Gallerie " alt="Projet Gallerie ">
+				<img src="img/projects/project4.jpg" title="Projet Gallerie " alt="Projet Gallerie ">
 			</a>
 			<a href="#" class="btn-light">
 				<i class="fas fa-eye"></i> Projet Gallerie 
@@ -59,6 +59,17 @@
 				<i class="fas fa-eye"></i> Projet Calculatrice
 			</a>
 			<a href="https://github.com/hyneryl/kursas1/blob/master/namuDarbaiKursams/js/js11/index.html" alt="calculator project" title="calculator project" class="btn-dark">
+				<i class="fab fa-github"></i> Github
+			</a>
+		</div>
+		<div class="item">
+			<a href="https://github.com/hyneryl/kursas1/tree/master/namuDarbaiKursams/projektas/new_project">
+				<img src="img/projects/project6.jpg" alt="Projet Portfolio" title="Projet Portfolio">
+			</a>
+			<a href="#" class="btn-light">
+				<i class="fas fa-eye"></i> Projet Portfolio
+			</a>
+			<a href="https://github.com/hyneryl/kursas1/tree/master/namuDarbaiKursams/projektas/new_project" class="btn-dark" alt="Projet Portfolio" title="Projet Portfolio">
 				<i class="fab fa-github"></i> Github
 			</a>
 		</div>

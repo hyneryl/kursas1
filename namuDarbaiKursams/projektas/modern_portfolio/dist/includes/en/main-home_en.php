@@ -1,10 +1,14 @@
+<title>Welcome to my Portfolio</title>
+</head>
+<body id="bg-img">
+
 <main id="home">
 	<h1 class="lg-heading">
 		Chris
 		<span class="text-secondary">Marie</span>
 	</h1>
 	<h2 class="sm-heading">
-		Web Developer, Programmer, Designer & Entrepreneur
+		Web Developer, Programmer, Designer &amp; Entrepreneur
 	</h2>
 	<div class="icons">
 		<a href="https://www.messenger.com/t/chris.marie13">

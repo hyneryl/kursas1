@@ -1,3 +1,8 @@
+<?php include('includes/header.php');
+<?= include('text_about_en.php'); ?>
+</head>
+<body id="bg-img">
+
 <main id="about">
 	<h1 class="lg-heading">
 		About
@@ -33,3 +38,4 @@
 		</div>
 	</div>
 </main>
+

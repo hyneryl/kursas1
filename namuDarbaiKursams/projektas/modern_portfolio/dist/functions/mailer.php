@@ -1,24 +1,23 @@
 <?php
     function dbConnector() {
         try {
-            return $pdo = new PDO('mysql:host=127.0.0.1; dbname=forma', 'root', '');
+            return $pdo = new PDO('mysql:host=127.0.0.1; dbname=chris', 'root', '');
     }   catch (PDOException $e){
             die($e->getMessage());
     }
 }
 #pdo tiesiog kintamasis, o po ir klase
 #PRISIJUNGIMAS PRIE DUOMENU BAZES
-#UZKLAUSA I DB
+#UZKLAUSA I DB 'mysql:host=127.0.0.1; dbname=chris', 'chris', 'mariechris258');
     function visosUzduotys($pdo) {
-        $teiginys = $pdo->prepare('select * from ndarbai');
-        $teiginys->execute();
+        $infoTrue = $pdo->prepare('select * from form');
+        $infoTrue->execute();
     
-    return $teiginys->fetchAll(PDO::FETCH_CLASS, 'namuDarbas');
+    return $infoTrue->fetchAll(PDO::FETCH_CLASS, 'form');
 }
 
 
 	if(isset($_POST['Submit'])) {
-		include('db.php')
 	$name = trim($_POST['name']);
 	$email = trim($_POST['email']);
 	$messsage = trim($_POST['message']);
@@ -33,6 +32,4 @@
 			echo "<script>alert('Thanks. Your message has been received. We will contact you back as soon as possible.');</script>";
 		}
 	}
-
-	include('db.php');
 	}

@@ -1,10 +1,10 @@
 <main id="work">
 	<h1 class="lg-heading">
-		My
-		<span class="text-secondary">Work</span>
+		Mano
+		<span class="text-secondary">Darbai</span>
 	</h1>
 	<h2 class="sm-heading">
-		Check out some of my projects...
+		Štai yra keli mano projektai...
 	</h2>
 	<div class="projects">
 		<div class="item">
@@ -59,6 +59,17 @@
 				<i class="fas fa-eye"></i> Calculator Project
 			</a>
 			<a href="https://github.com/hyneryl/kursas1/blob/master/namuDarbaiKursams/js/js11/index.html" alt="calculator project" title="calculator project" class="btn-dark">
+				<i class="fab fa-github"></i> Github
+			</a>
+		</div>
+		<div class="item">
+			<a href="https://github.com/hyneryl/kursas1/tree/master/namuDarbaiKursams/projektas/new_project">
+				<img src="img/projects/project6.jpg" alt="Portfolio Project" title="Portfolio Project">
+			</a>
+			<a href="#" class="btn-light">
+				<i class="fas fa-eye"></i> Portfolio Project
+			</a>
+			<a href="https://github.com/hyneryl/kursas1/tree/master/namuDarbaiKursams/projektas/new_project" class="btn-dark" alt="Portfolio Project" title="Portfolio Project">
 				<i class="fab fa-github"></i> Github
 			</a>
 		</div>

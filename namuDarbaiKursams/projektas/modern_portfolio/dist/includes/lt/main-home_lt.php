@@ -4,7 +4,7 @@
 		<span class="text-secondary">Marie</span>
 	</h1>
 	<h2 class="sm-heading">
-		Web Developer, Programmer, Designer & Entrepreneur
+		Web Developeris, Programmeris, Designeris &amp; Entrepreneur
 	</h2>
 	<div class="icons">
 		<a href="https://www.messenger.com/t/chris.marie13">

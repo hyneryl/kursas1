@@ -1,13 +1,13 @@
 <main id="about">
 	<h1 class="lg-heading">
-		A propos de moi
-		<span class="text-secondary">Me</span>
+		A propos de 
+		<span class="text-secondary">moi</span>
 	</h1>
 	<h2 class="sm-heading">
 		Laissez-moi vous dire quelques mots...
 	</h2>
 	<div class="about-info">
-		<img src="../../img/portrait.jpg" alt="Chris Marie" class="bio-image">
+		<img src="img/portrait.jpg" alt="Chris Marie" class="bio-image">
 
 		<div class="bio">
 			<h3 class="text-secondary">BIO</h3>
@@ -17,13 +17,13 @@
 		<div class="job job-1">
 			<h3>123 Webshop</h3>
 			<h6>Developpeur Full Stack</h6>
-			<p>Peu importe à quoi peuvent ressembler vos idées de projets, je peux y travailler pour en obtenir des sites sous les langages de développement suivants HTML5, CSS3, javaScript, PHP, puis avec ou sans gestion de bases de données mySQL. Je peux vous aider à rendre vos rêves réalité.</p>
+			<p>Peu importe à quoi peuvent ressembler vos idées de projets, je peux y travailler pour en obtenir des sites sous les langages de développement suivants HTML5, CSS3, javaScript, PHP, puis avec ou sans gestion de bases de données mySQL.<br><br>Je peux vous aider à rendre vos rêves réalité.</p>
 		</div>
 
 		<div class="job job-2">
 			<h3>Designeur ABC</h3>
 			<h6>Developpeur Front End</h6>
-			<p>Si vous avez uniquement besoin d'un site Web design du côté utilisateur, avec quelques descriptions de vous et de vos projets, laissez-moi savoir tous vos besoins, j'utiliserai ainsi les langages suivants HTML5, CSS3 and/or javaScript selon vos besoins ou vos pensées. Je peux vous aider à rendre vos rêves réalité.</p>
+			<p>Si vous avez uniquement besoin d'un site Web design du côté utilisateur, avec quelques descriptions de vous et de vos projets, laissez-moi savoir tous vos besoins, j'utiliserai ainsi les langages suivants HTML5, CSS3 and/or javaScript selon vos besoins ou vos pensées.<br>Je peux vous aider à rendre vos rêves réalité.</p>
 		</div>
 
 		<div class="job job-3">

@@ -1,6 +1,6 @@
 <?php
 	if(isset($_POST['Submit'])) {
-	$vardas = trim($_POST['vardas']);
+	$vardas = trim($_POST['name']);
 	$email = trim($_POST['email']);
 	$messsage = trim($_POST['message']);
 	if (!empty($vardas) && !empty($email) && !empty($message)) {

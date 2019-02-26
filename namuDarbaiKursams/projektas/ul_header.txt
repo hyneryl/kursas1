@@ -1,0 +1,35 @@
+<ul class="lang">
+		<li>
+				<?php
+					 if($langue == 'en') {
+							echo '<a href='en.php' alt="English">'.'EN';
+					 } else if ($langue == 'fr') {
+							echo '<a href='en.php' alt="Anglais">'.'AN';
+					 } else if ($langue == 'lt') {
+						 echo '<a href='en.php' alt="Anglø">'.'EN';
+					 }
+				?>
+		</li>
+		<li>
+				<?php
+					 if($langue == 'en') {
+							echo '<a href='fr.php' alt="French">'.'FR';
+					 } else if ($langue == 'fr') {
+							echo '<a href='fr.php' alt="Fran?ais">'.'FR';
+					 } else if ($langue == 'lt') {
+						 echo '<a href='fr.php' alt="Prancûzø">'.'FR';
+					 }
+				?>
+		</li>
+		<li>
+			<?php
+					 if($langue == 'en') {
+							echo '<a href='ly.php' alt="Lithuanian">'.'LT';
+					 } else if ($langue == 'fr') {
+							echo '<a href='lt.php' alt="Lituanien">'.'LT';
+					 } else if ($langue == 'lt') {
+						 echo '<a href='lt.php' alt="Lietuviø">'.'LT';
+					 }
+				?>
+		</li>
+	</ul>
